@@ -1,0 +1,37 @@
+\section{Aggregate implications}
+\label{sec:agg_implications}
+
+What are the aggregate implications of our findings on the plant level? Our plant level findings suggest that an indicator variable for whether a plant is recruiting or not, multiplied with the plant size, is a superior measure of firm willingness to hire compared to the pure number of vacancies. On the aggregate level this suggests that the number of plants, weighted by they respective size, provides a better of the aggregate willingness to hire.
+
+One way to test this hypothesis in the aggregate data is via estimated matching function. Specifically, I assume that the aggregate matching function has constant returns to scale and takes the following form
+\begin{align}
+M(U_t, V_t)=AU_t^{\alpha}V_t^{1-\alpha}
+\end{align}
+Consequently, the job-finding rate can be written as
+\begin{align}
+\frac{H_t}{U_t}=AU_t^{\alpha-1} V_t^{1-\alpha}
+\end{align}
+which in log terms takes the following form
+\begin{align}
+\log\left(\frac{H_t}{U_t}\right) =\log(A)+\left(1-\alpha\right)\log\left(\frac{V_t}{U_t}\right) 
+\end{align}
+I estimate this relationship on Swedish data during the period 2001Q1-2012Q4. I take unemployment and job-finding probabilities from the Swedish Labor Market Survey. As measure for job-openings I rely both on (1) the total number of vacancies in the economy and (2) the number of plants with a positive number of vacancies weighted by their size.
+
+Interestingly, the alternative measure for job-openings yields a better fitting matching function. Table \ref{tab:agg_matching_fct} shows the matching function estimated using (1) the total number of vacancies, (2) the number of plants with a positive number of vacancies and (3) the number of plants with a positive number of vacancies weighted by the plant size. The three models yields roughly similar coefficients, but the fit is improved by approx. 30 \% when using number of recruiting plants weighted by size instead of the total number of vacancies.
+
+\input{../../Data/Not_Server/Matching_estimation/tables/matching_fct_table_nsa}
+
+This finding also have potentially implications on how we should think about the labor market development in the wake the Great Recession in 2008/09. After 2008/09some countries, including Sweden, saw an outwards shift in the Beveridge Curve (Figure \ref{fig:Beveridge}) which have let some analysts to suggest that matching efficiency has declined \citep{Riksbank2012, Hakanson2014}. However, if we look at the labor market through the lens of the alternative measure of job-openings the marked outwards shift is less clear (Figure \ref{fig:Beveridge}, left). Using this measure there was also an outward shift after 2008/09, but it is less marked and does in fact only bring the Beveridge curve back to a level where it was operating before 2006.
+
+
+
+\begin{figure}[h]
+\centering
+%l b r t
+\caption{Beveridge curves}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=\textwidth]{../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf}
+\flushleft
+%\footnotesize{\emph{Notes:} The figure shows the average number of hires (y-axis) for each number of vacancies in the previous month (x-axis). } \\
+\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden.}
+\label{fig:Beveridge}
+\end{figure}

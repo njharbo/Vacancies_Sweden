@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\caption{\label{tab:main_nls} Plant level hiring regression, Non-linear least squares,  2001-2012 }
+\begin{tabularx} {\textwidth} { l X cXcXcXcXc}
+\hline
+       &&   (1) &&     (2) &&    (3)       &&   (4)        &&   (5)      \\
+\hline
+        &&   \footnotesize{ Hires(t+1)} &&     \footnotesize{ Hires(t+1)} &&    \footnotesize{ Hires(t+1)}      &&  \footnotesize{ Hires(t+1)}       &&    \footnotesize{ Hires(t+1)}     \\
+\hline
+\footnotesize{Vacancies(t)}        &&     0.495\sym{***}&&      0.0371\sym{***}&&      0.0102         &&    4.33e-09         &&    2.35e-09       \\
+                    &&   (0.00721)         &&   (0.00603)         &&   (0.00608)         &&   (0.00863)         &&   (0.0214)           \\
+\footnotesize{Plant size (t) }     &&                     &&       0.664\sym{***} &&       0.684\sym{***} &&       0.905\sym{***} &&       0.905\sym{***}\\
+                    &&                     &&   (0.00505)         &&   (0.00533)         &&    (0.0102)         &&    (0.0102)         \\
+\hline
+\footnotesize{Time-fixed effects}  && Yes                 && Yes                     &&           Yes          &&    Yes        &&    Yes      \\
+\footnotesize{Industry dummies  }  && No                  && No                      &&     Yes                 &&    Yes        &&   Yes      \\
+\footnotesize{Value-added dummies} && No                  && No                      &&     No                 &&    Yes        &&    Yes      \\
+\footnotesize{Turnover dummies  }  && No                  && No                      &&     No                 &&    No        &&    Yes      \\
+\hline
+Observations        &&      693451         &&      693451         &&      693451         &&      482784         &&      482784         \\
+Adjusted \(R^{2}\)  &&       0.028         &&       0.046         &&       0.047         &&       0.078         &&        0.034         \\
+\textit{AIC}        &&   6036235.1         &&   6022939.6         &&   6022387.7         &&   3686250.0         &&   3708815.2         \\
+\hline\hline
+\multicolumn{11}{l}{\footnotesize Notes: Standard errors in parentheses. \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\) }\\
+\end{tabularx}
+\end{table}
+
+

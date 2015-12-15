@@ -1,0 +1,43 @@
+\subsection{Computing total number of posted vacancies in a month}
+
+\begin{itemize}
+
+\item From the survey we are given the number of vacancies medio in a given month, $V_{medio}$. However, we wish to know the total number of posted vacancies in this model. How do compute this? 
+
+\item We know that the total number of posted vacancies in month $\tau$ equals (assuming T days in the month)
+\begin{align}
+V_1+a_\tau V_1+a_\tau V_2+\dots+a_\tau V_{T}
+\end{align}
+
+\item Here $V_s$ is the total stock of vacancies at day $s$, while $a_\tau$ is the arrival rate of new vacancies. The latter is assumed to be constant during the month.
+
+\item Also note that the vacancy dynamics is given by
+\begin{align}
+V_{t+1}=(a_\tau-f_\tau)V_t
+\end{align}
+here $a_\tau$ is the (daily) arrival rate of new vacancies, while $f_\tau$ is the (daily) filling rate of existing vacancies. 
+
+\item This means that we can compute the number of vacancy \emph{primo} in month $\tau$ from the observed number \emph{medio}
+
+\begin{align}
+V_{primo}=(a_\tau-d_\tau)^{-T/2}V_{medio}
+\end{align}
+
+\item Knowing the number of vacancies primo month $\tau$, we can compute the number of vacancies throughout the month 
+
+\begin{align}
+&V_1+a_\tau V_1+a_\tau V_2+a_\tau V_3+\dots+a_\tau V_T \\
+&=V_1+a_\tau V_1+a_\tau(a_\tau-f_\tau) V_1+a_\tau(a_\tau-f_\tau)^2 V_1+\dots+a_\tau (a_\tau-f_\tau)^{T-1} V_1 \\
+&=V_1(1+a_\tau +a_\tau(a_\tau-f_\tau) +a_\tau(a_\tau-f_\tau)^2+\dots+a_\tau (a_\tau-f_\tau)^{T-1}) \\
+&=V_1(1+a_\tau a_\tau \frac{1-(a_\tau-f_\tau)^T}{1-(a_\tau-f_\tau)}  )
+\end{align}
+
+\item The remaining question is now how we calibrate $a_\tau$ and $f_\tau$. We will compute these from the vacancies registered at the PES 
+
+\item TBD: Insert Figure with time series for $a_\tau$ and $f_\tau$. These are on server.
+
+\begin{figure}
+[INSERT FIGURE]
+\end{figure}
+
+\end{itemize}

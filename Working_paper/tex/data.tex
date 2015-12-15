@@ -1,0 +1,71 @@
+\section{Data}
+\label{sec:data}
+
+\subsection{Job vacancies}
+
+For micro-data on job-vacancies I draw on two data sources: the Swedish Job Vacancy Survey and the database from the Swedish Public Employment Service (PES). 
+
+The Swedish Job Vacancy Survey is administered by Statistics Sweden and has been collected on a quarterly basis since 2001. In the survey a vacancy is defined as 
+\enquote{a position which has been made available for external job-seekers via the newspapers, internet or another media}. The survey further contains information on how many of the open positions that are currently manned and unmanned, respectively, and how many of the positions that are available immediately. The respondents are asked to report the number of vacancies medio of the reference month.\footnote{Specifically, the respondents are asked to report the number of job openings on the Wednesday closest to the 15th of the reference month.} For the private sector the sampling is done on the establishment level with approx. 16 700 work places sampled each period. For the public sector the sampling was also done on the work places level until 2006Q2. In 2006Q2 the sampling was changed to the organizational level and on this level 650 organizations are sampled each period. Units larger than 100 employees are asked to do the reporting for each month of the relevant quarter, whereas units with less than 100 employees only are asked to report in the reference month. Reporting takes place either via letter or online. Non-respondents are reminded via email, letter or a phone call. Until 2004 reporting was voluntary and the share of non-reporting units was 20 \% (40 \%) in the private (public) sector. In 2004 reporting became mandatory and currently the share of non-reporting units is 11 \% in the private sector and 2 \% in the public sector.
+%\cite{SCB2015}
+%\footnote{TBD: Describe difference between workplaces and firms in the public sector}
+%Uppgiftsskyldighet enligt lag 2001:99. Vite can tildommes.
+%Non-reporters. Source: mail from Vedrana
+
+The database for vacancies administered by the Swedish Public Employment Service (PES) is the other source for job-openings. The PES maintains a database containing the universe of job-postings made at the agency since 2001. Specifically, the database contains a row for each posting made at the agency with information on the start and end date of the posting along with information on the number of workers the firm is searching for and information on job and firm type. In principle the database contains data on both the firm and plant level. However, for the majority of the observations plant identifiers are missing, why the database in practice 
+only contains useful information on the firm level. To make the PES data comparable with the survey data, I compute the number of open positions at the PES medio each month. 
+
+The aggregate number for the two types of job openings is reported in Figure \ref{fig:openings_timeserie}. As expected the the level of vacancies in the survey are consistently above the level of vacancies reported at the PES, and the share of PES to survey vacancies varies in the range 30-50 \%. 
+
+\begin{figure}[h]
+\centering
+%l b r t
+\caption{Monthly job openings in Sweden, 2004-2012}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale=1]{../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf}
+\flushleft
+\footnotesize{\emph{Notes:} The figure shows the aggregate number of job openings in the survey and PES, respectively. The sample of firms is restricted to the firms sampled in the survey.} \\
+\footnotesize{\emph{Source:} The Swedish Public Employment Service and Statistics Sweden.}
+\label{fig:openings_timeserie}
+\end{figure}
+
+\subsection{Hires}
+
+For hires I also have access to two data sources: a survey based measure from Statistics Sweden and a register based measure from the Swedish tax registry. 
+
+The survey based measure of hires stems from the \emph{Short-term employment statistics} (Kortperiodisk sysselsätningsstatistik) as compiled by Statistics Sweden.
+This data is collected in combination with the job vacancy survey described above, and thus contains the same sample of plants and firms. This survey contains the number new hires as well as the number of workers currently employed at each plant. %The data is collected in combination with the job vacancy survey described above, and sampling is thus done with the same method and for the same establishments and firms as for the vacancy survey. Similar, reporting has also been mandatory for this survey since 2004 [TBD: Check]. Figure X shows the aggregate time serie for this survey based measure of hires over the period XX-XX.
+
+The second measure for hires is register based and stems from the Swedish tax authorities. Specifically, IFAU\footnote{Institute for Evaluation of Labour Market and Education Policy} maintains a database containing the start and end month of all employment spells as reported to the Swedish tax authorities. Along with the spell length the database contains an identifier for person, firm and establishment. From this data I compute the number of monthly hires as the number of spells that starts in an establishment in a given month. To discard repeated, or interrupted, spells I remove all spells where the individual has been employed in the last 12 months. Moreover, I restrict the sample to the establishments also available in survey based measure of hires in the given month. %Aggregating over the resulting measure for hires yields the time serie also depicted in Figure X. 
+
+In most months the register and survey based measure of hires are closely related (Figure \ref{fig:openings_timeserie}). However, the general exception is January, where the register based measure always exceeds that of the survey based. This is likely to be caused by mis-measurement in the former, as establishments reports spells as lasting for entire years instead of the correct duration in months. %To avoid relying on misreported data, I will in the analysis below only use hiring data where the number of hires in the register data equals that in the survey data. %I will however relax this restriction as a robustness check.
+%In section XX we associate the number of survey openings, with the number of subsequent hires. In this analysis we take point of departure in the sample of establishments establishments included in the survey each period. This dataset does not includes hires in the subsequent month, but we fetch this from to dataset from the tax register. To ensure data quality, we only include establishments where the number of hires from the tax register. in the first month, coincides the number of hires in the survey.This yields a dataset with XX observations. 
+
+\begin{figure}[h]
+\centering
+%l b r t
+\caption{Monthly hires in Sweden, 2001-2012}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale=1]{../../Data/Server/fig_survey_tax_hires_timeserie.pdf}
+\flushleft
+\footnotesize{\emph{Notes:} The figure shows the aggregate number of hires in the survey and tax data, respectively. The sample of firms is restricted to the firms sampled in the survey.} \\
+\footnotesize{\emph{Source:} IFAU and Statistics Sweden.}
+\label{fig:openings_timeserie}
+\end{figure}
+
+\subsection{Plant and firm background variables}
+
+From the \emph{Short-term employment statistics} survey and the Swedish Firm Register (both administered by Statistics Sweden) I furthermore have access to background information on each plant and firm in the survey. In particular, this background information contains information on the number of employees and industry of each plant, while turnover and value-added is availiable on the firm level is from the firm register. A summary of these variables is presented in Table \ref{sumstat}. 
+
+\input{../../Data/Server/tables/table_bg_descriptive_stat.tex}
+
+\subsection{Data selection}
+
+Below I will work with two different selections of the data above. 
+
+In section \ref{sec:basic_rel}, I relate the number of vacancies to the number of subsequent hires on the plant level. Here I use the data from the vacancy survey, and augment with hires in the next month from the tax register data. To ensure data quality of the hiring data, I cross-check the tax register data with the survey-based measure of hires in the \emph{Short-Term Employment Statistics}. In particular, I restrict the sample to plants where the number of hires in the tax-register and survey data is the same for the month of vacancy measurement.\footnote{I don't impose this restriction in the subsequent month, in which the relevant measurement of hiring is made, as the survey-data for hiring only is available in the same month as vacancies are measured.} 
+
+In section \ref{sec:PES_survey_rel}, I relate the number of vacancies in the survey with the PES. This is straightforward for the public sector after 2006Q2, as collection of both measures is done on the firm level. However, for the private sector and the public sector before 2006Q2 the comparison is challenged by the fact that the survey data only is available on the plant level, while the latter only is available on the firm level. I address this problem by restricting the dataset to the sub-sample where only one plant per firm exists. 
+%One concern with this approach is that the sub-sample of of firms with only one plant is not representative. To address this concern I repeat the analysis in Section  \ref{xx} for all firms, but where I predict the number of survey vacancies on the firm level by assuming that the share of vacancies on at a given plant is proportional to the share of employees at this plant.
+ 
+%I merge data for the two measures of openings on the firm level. This is straightforward for the public sector after 2006Q2, as collection of both measures is done on the firm level. However, for the private sector and the public sector before 2006Q2 the merging on the firm level is challenged by variation in the level of data collection. Indeed, in the survey data collection is done on the establishment level, while the data in the PES only is available on the firm level. Hence, I predict the number of survey vacancies on the firm level by assuming that the share of vacancies on at a given plant is proportional to the share of employees at this plant.\footnote{I can, however, check my results in section \ref{sec:openings} against the results in the sub-sample where only one establishment per firm exists. In this sub-sample the number of survey vacancies on the firm and establishment level will be the same.} 
+
+%[Data sources] We use firm-level vacancy data from two different sources. First, for vacancies we use the database from Swedish Public Employment Service (PES). This database contains start and end dates on each listed vacancy at the PES. Each vacancy is registered on the firm level. Second, we use a survey based measure for vacancies from the Job Vacancy Survey (\emph{konjunkturstatistik över vakanser}) collected by the Statistics Sweden. This is a monthly representative survey covering approx. 18 700 private work places on the plant level, and 650 public work places on the organizational level (juridisk enhet). Here a vacancy is defined as an availiable position, which on a given has been announced and been made avaliable for external job-seekers but not yet is filled. The announcement can have been made through news papers, internet or through personal contacts. Thus, the definition of vacancies in the survey is broader than the definition in the PES database.

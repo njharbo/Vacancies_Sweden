@@ -1,0 +1,64 @@
+
+\documentclass[11pt,article]{memoir}
+%Layout
+	\usepackage[a4paper,left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+	\usepackage{authblk}
+	\usepackage{rotating}
+	\DisemulatePackage{setspace}
+	\usepackage{setspace}
+	\onehalfspacing
+	\counterwithout{section}{chapter}
+	\usepackage[hang,small,bf]{caption}
+	\setcounter{secnumdepth}{2}
+%Fonts and encoding
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{amsmath}
+	\usepackage{bm}
+	\usepackage[T1]{fontenc}
+	\usepackage[utf8]{inputenc}
+	\usepackage{csquotes}
+	%\usepackage{lmodern}
+	%\usepackage{fouriernc}
+%Graphics and tables
+	\usepackage{graphicx}
+	\usepackage{placeins}
+	\usepackage{tabularx,booktabs}
+	\usepackage{longtable}
+	\usepackage{subfig}
+	\usepackage{rotating}
+	\usepackage{array,multirow}
+	\usepackage{threeparttable}
+ \usepackage[]{endfloat}
+%References
+	\usepackage{natbib}
+	\bibliographystyle{chicago}
+% Handle Stata input    
+    \newcommand{\sym}[1]{$^{#1}$}	
+
+
+\title{Measuring Job Openings // Evidence from Sweden}
+\date{Version: \today{}\\\emph{--- preliminary and incomplete version - please do not circulate ---}}
+
+\begin{document}
+
+\maketitle 
+\newpage
+\input{./tex/introduction.tex}
+\newpage
+\input{./tex/literature.tex}
+\newpage
+\input{./tex/data.tex}
+\FloatBarrier
+\newpage
+\input{./tex/model.tex}
+\newpage
+\input{./tex/conclusion.tex}
+
+\newpage
+\bibliographystyle{apalike}
+\bibliography{./bibtex/bibtex}
+
+
+
+\end{document}

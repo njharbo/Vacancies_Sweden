@@ -1,0 +1,34 @@
+\section{Relationship between vacancies in survey and PES}
+\label{sec:PES_survey_rel} 
+
+In this section, I document the relationship between vacancies as measured in the (i) survey and in the (ii) register of the PES on the firm level.
+
+Figure \ref{fig:agg_PES_survey_share} shows a cross-plot between these two measures on the firm level. If the two measures are identical, we should see the observations line up on the 45-degree line. Evidently, this is not the case. Instead, regressing the two measures on each other yields a $R^2$ of only 0.06. Moreover, 47 \% of the vacancies registered in the survey are not registered in the PES. This is unsurprising given that not all firms can be expected to use the Public Employment Service as recruitment channel, which creates the problem of selection in the PES data. What is, however, more surprising is that 37 \% of the vacancies registered at the PES are not counted in the survey.
+
+\begin{figure}[h]
+\centering
+%l b r t
+\caption{Cross plot of vacancies registered in the survey and the PES register, firm-level, 2004-2012 }
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=\textwidth]{../../Data/Server/figures/plot_PES_v_survey_all_cfarshare1.png}
+\flushleft
+\footnotesize{\emph{Notes:} The sample is restricted to firms with only one plant.} \\
+\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden and Swedish Public Employment Service.}
+\label{fig:agg_PES_survey_share}
+\end{figure}
+
+Table \ref{tab:PES_survey} documents the heterogeneity in the ratio of vacancies registered the PES to the number counted in the survey. Overall, this table suggests at the use of the PES as recruitment channel varies substantially across firm characteristics. The share of PES to survey vacancies is largest within \emph{Public and personal services} and smallest within construction. Indeed, the former industry accounts for 42 \% of all vacancies at the PES. Across plant size there is not clear pattern, while the use across the turnover and value-added deciles peaks in the middle of the distribution. 
+
+\input{./tex/tables/PES_survey_ratios.tex}
+
+Finally, Figure \ref{fig:agg_PES_survey_share} documents the time-series for the aggregate share of vacancies registered at the PES \emph{vis-a-vis} the number in the survey. From 2004-2012 this share has varied in the interval $28-47$ \% and has displayed a increasing trend over time.
+
+\begin{figure}[h]
+\centering
+%l b r t
+\caption{Ratio Public Employment Service to survey vacancies, 2004-2012 }
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale=1]{../../Data/Server/figures/plot_PES_survey_ratio_incl_pub_2004_MA.pdf}
+\flushleft
+\footnotesize{\emph{Notes:} The figure shows a 12-month moving average of the aggregate ratio of PES to survey vacancies in the sample.} \\
+\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden and Swedish Public Employment Service.}
+\label{fig:agg_PES_survey_share}
+\end{figure}

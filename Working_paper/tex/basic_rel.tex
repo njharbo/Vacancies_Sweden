@@ -1,0 +1,81 @@
+\section{Relationship between vacancies and hires on the plant level}
+\label{sec:basic_rel}
+
+Basic search-matching theory assumes a linear relationship between hiring and vacancies on the plant level. In the standard search and matching model aggregate hiring is given by the input of unemployed workers $(U)$ and job-openings $(V)$ to an aggregate matching function with constant return to scale $H=M(U,V)$. Given  homogeneity of firms hiring in a firm $j$ will thus be a function of the aggregate vacancy yield and the number of job-openings on the firm level.
+\begin{align}
+H(t+1, j)=\frac{M(U(t),V(t))}{V(t)} V(t,j)
+\label{eq:ht+1}
+\end{align}
+Two predictions follows from this equation. First, in the cross-section of firms the hiring should be linear in the number of job-openings posted at the firm level. The coefficient on firm vacancies will in turn be a decreasing function of aggregate labor market tightness $(V/U)$. Second, we should only see hiring in firm with a positive number of job-openings. 
+
+When investigating the relationship between hires and vacancies in the data one initial challenge is to specify the correct interval between vacancy and the relevant hire. To guide the choice of this interval, I draw the histogram of the distribution between start- and end-date of vacancies posted at the Public Employment Service (Figure \ref{fig:PES_duration}). The mean duration of a vacancy is 18 days, and 85 \% of the durations are less than a month. On the back of this I set the interval between vacancy and hire to one month, but I will investigate the robustness with respect to this choice below. 
+
+\begin{figure}[h]
+\centering
+%l b r t
+\caption{Duration of vacancies at the Public Employment Service, 2001-2012}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale=1]{../../Data/Server/figures/plot_PES_duration.pdf}
+\flushleft
+\footnotesize{\emph{Notes:} The figure shows the histogram of the interval between start and end date of all vacancies registered at the Public Employment Service during the period 2001-2013.} \\
+\footnotesize{\emph{Source:} The Swedish Public Employment Service.}
+\label{fig:PES_duration}
+\end{figure}
+
+A first look at the data speaks against the predictions of a linear relationship between hiring and vacancies. Figure \ref{fig:crossplot} shows the raw relationship between vacancies and hires on the plant level. Each dot represent the average number of hires for the given number of vacancies represented on the x-axis. This figure points to a concave rather than a linear relationship between the two variables. This depicted relationship clearly suffers from the deficiency of not holding the aggregate conditions on the labor market constant. Therefore, I also depict the relationship for all years in Figure \ref{fig:crossplot_panel} in the Appendix. For most year the concave relationship is still found, although the relationship for some years is more linear in some years. 
+
+\begin{figure}[h]
+\centering
+%l b r t
+\caption{Relationship between number of vacancies and hires, 2001-2012}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, scale=1]{../../Data/Server/figures/plot_medio_survey_v_hires_integer.pdf}
+\flushleft
+\footnotesize{\emph{Notes:} The figure shows the average number of hires (y-axis) for each number of vacancies in the previous month (x-axis). TBD: Insert standard deviations.} \\
+\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden.}
+\label{fig:crossplot}
+\end{figure}
+
+Moreover, a substantial share of all hires are made without any vacancies in the preceding month. This is witnessed by the by the dot at zero vacancies being non-zero in Figure \ref{fig:crossplot}. Moreover, Figure \ref{fig:share_without} shows that the share of hires made without any vacancies over time varies between 40 \% - 50 \%. Some of this can be accounted for via time-aggregation issues as I will explain in section \ref{sec:agg_implications}. 
+
+\begin{figure}[h]
+\centering
+%l b r t
+\caption{Share of all hires without vacancies in the preceding month, 2001-2012}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=\textwidth]{../../Data/Server/figures/plot_share_hire_without_vacancies.pdf}
+\flushleft
+%\footnotesize{\emph{Notes:} The figure shows the average number of hires (y-axis) for each number of vacancies in the previous month (x-axis). } \\
+\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden.}
+\label{fig:share_without}
+\end{figure}
+
+Across plant and firm characteristics a given number of vacancies are associated with different amount of hiring. Table \ref{tab:vacancy_yield} shows average hiring and vacancy rates as well as the average number of hires per vacancy. Across all plant groups there are more hires than vacancies. Moreover, there exist a substantial amount of heterogeneity in the number of hires per vacancy. Across industries it varies from 1.97 in the farming sector to 3.43 in the manufacturing sector. Across both number of employees and turnover we see that the vacancy yield is increasing with size. 
+
+\input{./tex/tables/hire_rate_vacancy_rate_vacancy_yield.tex}
+
+I now turn to the specific relationship between vacancies and hires on the plant level. As mentioned, we should, according to the basic search and matching model, expect the relationship between vacancies and hires to be characterised by the relationship in \eqref{eq:ht+1}. To test whether this is in fact the case, while allowing for the possibility of a non-linear relationship, I will estimate the following equation using the plant-level data.
+\begin{align}
+H(t+1)=\alpha_t V(t)^{\gamma}
+\label{eq:estimation_equation}
+\end{align}
+Here $\alpha_t$ is a time-fixed effect and $\gamma$ should be estimated to be one insofar that the data is consistent with the model.
+
+Estimating \eqref{eq:estimation_equation} involves a choice of estimation strategy. One option is to estimate \eqref{eq:estimation_equation} in logs using OLS. This, however, comes at the cost of loosing all observations with zero hires and/or vacancies. Another option is to estimate \eqref{eq:estimation_equation} using non-linear least squares. This allows for the inclusion of all observations in the regression. However, one should note that the model in any case restricts hires to be zero when vacancies are zero. Therefore, including observations with zero vacancies is likely only to decrease the fit of the model - not change the estimated parameters. On the other hand including observations with zero hires is likely to change the estimated parameters. In this section I will estimate the the model in logs (using ordinary least squares), but I include the model in levels (using non-linear least squares) as robustness in the Appendix.
+
+The basic relationship between vacancies and hires \eqref{eq:estimation_equation} is estimated in column 1 of Table \ref{tab:main_ols}. The estimation is done using ordinary least squares and time fixed effects. Notice that the exponent on vacancies is below unity, which speaks against a linear relationship between vacancies and hires. Also notice that the fit of the model is poor with a $R^2$ of only $0.27$. Similar results are found in the model estimated in levels (Table \ref{tab:main_nls}). However, here the fit is substantially worse which partly can be explained by the fact that the observations with zero vacancies have been omitted. 
+
+\input{./tex/tables/table_est_ols.tex}
+
+Next I will consider whether it is possible to improve the fit of the model by allowing willingness to hire to depend plant level characteristics characteristics as well as vacancies. So far we have assumed that the only variable that matters for plants willingness to hire is the number of posted vacancies. However, as we saw above the number of hires per vacancy (the vacancy yield) varies plant characteristics. In particular, we saw that the number of hires per vacancy was increasing in the plant size. Below we will allow for this by letting the willingness to hire be a function of not only vacancies but also a number of plant and firm level characteristics.
+\begin{align}
+H_{j,t+1}=\frac{M(U_t, V_t)}{V_t} F\left( V_{jt}, \mathbf{x}_t \right) \\
+F(V_{jt},\mathbf{x}_t)=V_{jt}^{\gamma_1}  \times  S_{jt}^{\gamma_2} \times T_{jt}^{\gamma_3} \times  Va_{jt}^{\gamma_4}
+\end{align}
+here $S_{jt}$ is size, $T_{jt}$ is turnover and $Va_{jt}$ is valueadded. %Including these background variables improves the fit of the hiring regression substantially.
+
+In column (2)-(4) of Table \ref{tab:main_ols} (and \ref{tab:main_nls} in the Appendix) I gradually allow the willingness to hire to depend on these additional plant level characteristics. Two results stand out from this exercise. First, the fit of the model is substantially improved by allowing firm characteristics to affect the willingness to hire. Second, including these additional variables decrease the exponent on vacancies towards $0$. This is especially the case for plant size: when including this variable the fit of model increase substantially and the coefficient on vacancies decrease substantially. Relatively little additional fit is achieved from including the other background variables.  
+
+The take-away from this is that we can improve the prediction of hiring on the plant level by taking firm characteristics as well as vacancies into account. Indeed, just including plant size substantially improves the fit of predicted hires on the plant level. Specifically,
+\begin{align}
+F(V_{jt}, size_{jt})=V_{jt}^{a} size_{jt}^{b}
+\end{align}
+where $a$ is effectively zero and $b$ is between $0.4$ and $0.5$, is a superior measure of firms $j$'s willingness to hire \emph{vis-a-vis} $V$. That $a$ is effectively zero means that $V_{jt}^{a}$ effectively takes the form of a $0/1$ variable, which is $0$ when the plant reports $0$ vacancies and $1$ as soon as the plant reports a positive number of vacancies. This binary variable is then multiplied with $size_{jt}^{b}$ which is a concave function of plant size.
+

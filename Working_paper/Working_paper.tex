@@ -1,0 +1,75 @@
+\documentclass[12pt,article]{memoir}
+%Layout
+	\usepackage[a4paper,left=2cm, right=2cm, top=2.5cm, bottom=2.5cm]{geometry}
+	\usepackage{authblk}
+	\usepackage{rotating}
+	\DisemulatePackage{setspace}
+	\usepackage{setspace}
+	%\onehalfspacing
+	 \linespread{1.3}
+	\counterwithout{section}{chapter}
+	\usepackage[hang,small,bf]{caption}
+	\setcounter{secnumdepth}{2}
+%Fonts and encoding
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{amsmath}
+	\usepackage{bm}
+	\usepackage[T1]{fontenc}
+	\usepackage[utf8]{inputenc}
+	\usepackage{csquotes} % Für gute Anführungszeichen
+%Graphics and tables
+	\usepackage{graphicx}
+	\usepackage{placeins}
+	\usepackage{tabularx,booktabs}
+	\usepackage{longtable}
+	\usepackage{subfig}
+	\usepackage{rotating}
+	\usepackage{array,multirow}
+	\usepackage{threeparttable}
+	\usepackage{lscape} 
+	\usepackage{array} 
+%References
+	\usepackage{natbib}
+	\bibliographystyle{chicago}
+	\usepackage{hyperref}
+% Handle Stata input    
+    \newcommand{\sym}[1]{$^{#1}$}	
+
+%Frontpage
+\title{Mis-Measuring Job Openings: \\ Evidence from Swedish Plant Level Data\thanks{I am very grateful for helpful comments from Orley Ashenfelter, Tobias Broer, Saman Darougheh,  Karl Harmenberg,  John Hassler, Georg Marthin, Mounir Karadja, Per Krusell,  Alexander Kohlhas, Hannes Malmberg, Kurt Mitman, Erik \"{O}berg, Torsten Persson,  Robert Shimer, Jósef Sigurdsson,  Hans Henrik Sievertsen, David Str\"{o}mberg as well as seminar participants at the IIES and Warwick University. IFAU is gratefully acknowledged for financial support. All remaining errors are my own.}}
+\date{This version: \today{} \\ \small{Please visit \url{www.njharbo.dk/jobmarket/jmp.pdf} for most recent version}}
+\author{Niels-Jakob Harbo Hansen\thanks{IIES, nielsjakobharbo.hansen@iies.su.se}} 
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\begin{document}
+
+\maketitle 
+
+\begin{abstract}
+\input{./tex/abstract}
+\end{abstract}
+
+
+\newpage
+\input{./tex/introduction.tex}
+\FloatBarrier
+\input{./tex/data.tex}
+\FloatBarrier
+\input{./tex/basic_rel.tex}
+\FloatBarrier
+\input{./tex/time_agg.tex}
+\FloatBarrier
+\input{./tex/aggregate_implications.tex}
+\FloatBarrier
+\input{./tex/PES_survey_rel.tex}
+\FloatBarrier
+\input{./tex/conclusion.tex}
+\FloatBarrier
+\newpage
+\input{./tex/appendix.tex}
+\clearpage 
+\bibliography{./tex/bibtex}
+
+
+
+\end{document}

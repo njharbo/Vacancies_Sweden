@@ -1,0 +1,23 @@
+\appendix
+\section{Appendix}
+\label{sec:appendix}
+\settocdepth{section}
+
+
+\begin{figure}[h]
+\centering
+%l b r t
+\caption{Relationship between number of vacancies and hires, 2001-2012}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=\textwidth]{../../Data/Server/figures/plot_medio_survey_v_hires_integer_panel.pdf}
+\flushleft
+\footnotesize{\emph{Notes:} The figure shows the average number of hires (y-axis) for each number of vacancies in the previous month (x-axis). TBD: Change background color.} \\
+\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden.}
+\label{fig:crossplot_panel}
+\end{figure}
+
+
+\input{./tex/tables/table_est_nls.tex}
+
+\input{./tex/tables/table_est_ols_robust_timeagg.tex}
+\input{./tex/tables/table_est_ols_robust_2m_avg.tex}
+\input{./tex/tables/table_est_ols_robust_year_avg.tex}

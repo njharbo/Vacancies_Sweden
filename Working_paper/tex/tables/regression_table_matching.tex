@@ -1,0 +1,94 @@
+
+\documentclass[11pt,article]{memoir}
+%Layout
+	\usepackage[a4paper,left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+	\usepackage{authblk}
+	\usepackage{rotating}
+	\DisemulatePackage{setspace}
+	\usepackage{setspace}
+	\onehalfspacing
+	\counterwithout{section}{chapter}
+	\usepackage[hang,small,bf]{caption}
+	\setcounter{secnumdepth}{2}
+%Fonts and encoding
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{amsmath}
+	\usepackage{bm}
+	\usepackage[T1]{fontenc}
+	\usepackage[utf8]{inputenc}
+	\usepackage{csquotes}
+	%\usepackage{lmodern}
+	%\usepackage{fouriernc}
+%Graphics and tables
+	\usepackage{graphicx}
+	\usepackage{placeins}
+	\usepackage{tabularx,booktabs}
+	\usepackage{longtable}
+	\usepackage{subfig}
+	\usepackage{rotating}
+	\usepackage{array,multirow}
+	\usepackage{threeparttable}
+ %\usepackage[]{endfloat}
+\usepackage{lscape}
+%References
+	\usepackage{natbib}
+	\bibliographystyle{chicago}
+% Handle Stata input    
+    \newcommand{\sym}[1]{$^{#1}$}	
+
+
+\title{How Useful are Posted Job Openings? // Evidence from Sweden}
+\date{Version: \today{}\\\emph{--- preliminary and incomplete version - please do not circulate ---}}
+
+\begin{document}
+
+
+\begin{table}%{\pagewidth}
+\caption*{Estimated matching functions}
+\begin{tabularx}{\linewidth}{cXcXcXcXcX}
+\hline
+&& (1)							
+&& (2)					\\
+Explanatory variable: 
+&& log (job finding rate)
+&& log (job finding rate) 	\\		
+\hline 
+\\
+$\ln V/U$ 		
+& & $ .2196068 ^{***}$          								
+& & 	   				        							
+& &\\[0 mm]
+&&\scriptsize{$[.0790663]$}       
+&&\scriptsize{$[.01741572]$}
+\\
+$\ln V_{adj}/U$        
+& 								
+& 		
+&	
+&	$.2586721^{***}$						
+\\[0 mm]
+&&\scriptsize{$$}       
+&&\scriptsize{$[.0624391]$}
+\\	
+Constant 
+& & $-.8675726 $									
+& & $-1.275136 $		
+\\	[0 mm]
+&&\scriptsize{$[.1520888 ]$}       
+&&\scriptsize{$[.0251551 ]$} 
+\\
+$N $
+& & $43$									
+& & $43$		   				
+\\	
+Adjusted $R^2$
+& & $0.1584$
+& & $0.2779$		   				
+\\		
+\hline 
+\multicolumn{3}{l}{Notes:kl}
+\end{tabularx}
+\end{table}
+
+\end{document}

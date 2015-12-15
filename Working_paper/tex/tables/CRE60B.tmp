@@ -1,0 +1,135 @@
+
+\documentclass[11pt,article]{memoir}
+%Layout
+	\usepackage[a4paper,left=3.5cm, right=3.5cm, top=3cm, bottom=3cm]{geometry}
+	\usepackage{authblk}
+	\usepackage{rotating}
+	\DisemulatePackage{setspace}
+	\usepackage{setspace}
+	\onehalfspacing
+	\counterwithout{section}{chapter}
+	\usepackage[hang,small,bf]{caption}
+	\setcounter{secnumdepth}{2}
+%Fonts and encoding
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{amsmath}
+	\usepackage{bm}
+	\usepackage[T1]{fontenc}
+	\usepackage[utf8]{inputenc}
+	\usepackage{csquotes}
+	%\usepackage{lmodern}
+	%\usepackage{fouriernc}
+%Graphics and tables
+	\usepackage{graphicx}
+	\usepackage{placeins}
+	\usepackage{tabularx,booktabs}
+	\usepackage{longtable}
+	\usepackage{subfig}
+	\usepackage{rotating}
+	\usepackage{array,multirow}
+	\usepackage{threeparttable}
+ \usepackage[]{endfloat}
+%\usepackage{lscape}
+%References
+	\usepackage{natbib}
+	\bibliographystyle{chicago}
+% Handle Stata input    
+    \newcommand{\sym}[1]{$^{#1}$}	
+
+
+\title{How Useful are Posted Job Openings? // Evidence from Sweden}
+\date{Version: \today{}\\\emph{--- preliminary and incomplete version - please do not circulate ---}}
+
+\begin{document}
+
+
+\begin{sidewaystable}
+\begin{table}[htbp]
+\caption{Survey openings against hires next month}
+	\begin{tabularx}{\textwidth}{cXcXcXcXcXcXcXcXc}
+	\hline
+&& (1)							
+&& (2)					
+&& (3)
+&& (4)
+&& (5)
+&& (6) \\
+Explanatory variable: 
+&& Hires
+&& Hires 			
+&& Hires
+&& Hires, corrected 
+&& Hires, corrected 
+&& Hires, corrected \\ 
+\hline 
+Openings, medio    
+& & $.69962403^{***}$          								
+& & $.45621922^{***}$		   				
+& & $.11722395^{***}$		        
+& &									
+& &	
+&&  							
+& &\\[0 mm]
+&&\scriptsize{$[.01450561]$}       
+&&\scriptsize{$[.01741572]$}
+&&\scriptsize{$[.02037523]$}
+&&\scriptsize{$$}
+&&\scriptsize{$$}
+&&\scriptsize{$$}
+\\
+Openings, ultimo    
+& & 
+& & 		   				
+& & 		        
+& &$.77301698^{***}$									
+& &$.68184984^{***}$	
+&& $.08605029^{***}$										
+& &\\[0 mm]
+&&\scriptsize{$$}
+&&\scriptsize{$$}
+&&\scriptsize{$$}
+&&\scriptsize{$$}
+&&\scriptsize{$[.02031694]$}
+&&\scriptsize{$[.02869631]$}
+&&\scriptsize{$[.03681911]$}
+\\	
+Firm controls
+& & NO 									
+& & YES		   				
+& & NO		        
+& &	NO								
+& &	YES								
+& & NO
+\\	
+Fixed effects
+& & NO									
+& & NO		   				
+& & YES		        
+& &	NO								
+& &	NO								
+& & YES
+\\	
+$N $
+& & $693451$									
+& & $529265$		   				
+& & $693451$				        
+& &	$693451$								
+& &	$529265$									
+& & $693451$
+\\	
+$R^2$
+& & $.01631459$
+& & $.01987082  $		   				
+& & $ .01631459$		        
+& &	$.01763083 $								
+& &	$.0190428   $								
+& &$.01763083   $
+\\		
+\hline 
+\end{tabularx}
+\end{table}
+\end{sidewaystable}
+
+
+\end{document}

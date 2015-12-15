@@ -1,0 +1,36 @@
+\section{Data}
+
+\subsection{Data sources and definitions}
+
+\subsubsection{Job-openings}
+
+We will use two sources for job openings: the Swedish Job Vacancy Survey and the database from the Swedish Public Employment Service (PES). 
+
+The Swedish Job Vacancy Survey is administered by Statistics Sweden and has been collected each quarter basis since 2001. For the private sector the sampling is done on the establishment level with approx. 16 700 work places sampled each period. For the public sector work places were also in the sample until 2006. However, in 2006 the sampling was changed to the organizational level [juridisk enhet] and on this level 650 organizations are sampled each period.\footnote{TBD: Describe difference between workplaces and firms are constructed in the public sector}  For units larger than 100 employees the reporting is done for each month of the quarter, while units with less than 100 employees only do the reporting is only done for the reference month. Reporting is done either via letter or online. If the unit fails to report reminders are sent via email or mail, and as a last resort a phone call is made to the relevant unit. Until 2004 reporting was voluntary and the share of non-reporting units 20 \% (40 \%) in the private (public) sector. In 2004 reporting became mandatory [Uppgiftsskyldighet enligt lag 2001:99. Vite can tildommes] and currently the share of non-reporting units is 11 \% in the private sector and 2 \% in the public sector \cite{SCB2015}. [Are the non-reporters in the micro data?]
+
+In the letter to each sampled units the definition of a job opening is defined. The survey defines a job-opening as a "a position which has been made available for external job-seekers via the newspapers, internet or another media". Thus, This definition excludes positions that are only open for internal candidates. The survey further contains information on how many of the open positions that are currently manned and unmanned, respectively, and how many of the positions that are available immediately. The respondents are asked to report the number of job openings medio of the reference month.\footnote{Specifically, the respondents are asked to report the number of job openings on the Wednesdat closest to the 15th of the reference month.}
+
+The other source for job openings is the Swedish Public Employment Service (PES). The PES maintains a database containing the universe of job-postings made at the PES. Specifically, each opening at the the PES contains a start and end date along with information on the job and firm type. The database only contains useful identifiers on the organizational level\footnote{Only X \% of the observations in the PES database contains identifiers on the establishment level}. From this data we compute the number of active job-openings at the PES in the middle of each firm. 
+
+\subsubsection{Hires}
+
+
+[Data sources] We use firm-level vacancy data from two different sources. First, for vacancies we use the database from Swedish Public Employment Service (PES). This database contains start and end dates on each listed vacancy at the PES. Each vacancy is registered on the firm level. Second, we use a survey based measure for vacancies from the Job Vacancy Survey (\emph{konjunkturstatistik över vakanser}) collected by the Statistics Sweden. This is a monthly representative survey covering approx. 18 700 private work places on the plant level, and 650 public work places on the organizational level (juridisk enhet). Here a vacancy is defined as an availiable position, which on a given has been announced and been made avaliable for external job-seekers but not yet is filled. The announcement can have been made through news papers, internet or through personal contacts. Thus, the definition of vacancies in the survey is broader than the definition in the PES database.
+
+We have data on firm-level hires from two different sources. First, we have a survey based measure of firm-level hires on the \emph{Short-term employment statistics} (Kortperiodisk sysselsätningsstatistik) collected by Statistics Sweden. This data is collected on the plant-level from the same plants surveyed in the Job Vacancy Survey mentioned above. Moreover, we also have all Swedish employment spells, as reported to the Swedish tax authorities. These are available to us through a database maintained by the \footnote{Institute for Evaluation of Labour Market and Education Policy} (IFAU). The database contains monthly start and end-dates of all employment spells in Sweden, and from this we can compute the number of hires on plant and firm level in each month.
+
+[Data selection] We restrict the sample to firms surveyed in the Job Vacancy Survey at each point in time. That is, for each point in time we match the survey of vacancies and hires with (1) the register of openings at the PES database and (2) the register of hires from the IFAU database. On challenge is here that while the survey is collected on the plant level, we only have PES vacancies available on the firm level. Therefore, we predict the number of survey vacancies on the firm level, by asumming that share of vacancies on the plant level is propertional to share of employed at this plant. TBD:We gauge the soundness of this approach by predicting the number of PES vacancies on the firm level using this approach. This yields an $R^2$ of XX.
+
+Figure X illustrates the number of vacancies according to both the survey and the PES for the selected firms. To One challenge in constructing this data
+
+[Descriptives on vacancies] Show graph and explain exactly which variable is used
+
+[Descriptives on hires] Figure X shows the time series for both the survey and register based database. 
+
+\subsection{Announced and unannounced hires}
+
+[Announced and unannounced hires]
+
+\subsection{Patterns in cross section}
+
+\subsection{Patterns across time}

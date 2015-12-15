@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\caption{\label{tab:robust_year_avg} Plant level hiring regression, average hires and vacancies during a year, Ordinary Least Squares,  2001-2012}
+\begin{tabularx} {\textwidth} { l  cXcXcXcc}
+\hline
+       &   (1) &&     (2) &&    (3)       &&   (4)        &  (5)      \\
+\hline
+        &   \footnotesize{Hires(t)} &&     \footnotesize{Hires(t)} &&    \footnotesize{Hires(t)}      &&  \footnotesize{Hires(t)}       &    \footnotesize{Hires(t)}     \\
+\hline
+Vacancies(t) &      0.209\sym{***}&&     0.00486         &&     0.00537\sym{*} &&     0.00400         &     0.00266          \\
+                    &   (0.00350)         &&   (0.00302)         &&  (0.00304)        &&   (0.00353)         &  (0.00354)          \\
+Plant size(t)      &     &&                0.420\sym{***} &&       0.419\sym{***} &&       0.466\sym{***} &       0.469\sym{***} \\
+                    &                   && (0.00296)         &&   (0.00308)         &&   (0.00499)         &   (0.00501)               \\
+\hline
+\footnotesize{Time-fixed effects}  & Yes                 && Yes                     &&           Yes          &&    Yes        &    Yes      \\
+\footnotesize{Industry dummies}   & No                  && No                      &&     Yes                 &&    Yes        &  Yes      \\
+\footnotesize{Value-added dummies} & No                  && No                      &&     No                 &&    Yes        &    Yes      \\
+\footnotesize{Turnover dummies }   & No                  && No                      &&     No                 &&    No        &    Yes      \\
+\hline
+Observations        &    41298         &&       41237         &&       41237         &&       27038         &      27038      \\
+Adjusted \(R^{2}\)  &     0.263         &&       0.541         &&       0.541         &&       0.434         &       0.435        \\
+\textit{AIC}        &  95989.2         &&     76323.5         &&     76322.1         &&     48289.6         &     48239.9              \\
+\hline\hline
+\multicolumn{9}{l}{\footnotesize Notes: Standard errors in parentheses. \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\).     }\\
+\multicolumn{9}{l}{\footnotesize Hires/vacancies: The average number of monthly hires/vacancies in year $t$.}\\
+\multicolumn{9}{l}{\footnotesize Sample is all plants with more than 3 observations per year.}\\
+\end{tabularx}
+\end{table}
+
+
+
+
