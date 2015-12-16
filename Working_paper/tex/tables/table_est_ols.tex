@@ -1,26 +1,29 @@
-\begin{table}[htbp]
+
+\begin{table}[t]
 \caption{\label{tab:main_ols} Plant level hiring regression, Ordinary Least Squares,  2001-2012}
-\begin{tabularx} {\textwidth} { l X cXcXcXcXc}
+\scalebox{0.86}{
+\begin{tabularx} {1.2\textwidth} { l X cXcXcXcXc}
 \hline
        &&   (1) &&     (2) &&    (3)       &&   (4)        &&   (5)      \\
 \hline
-        &&   \footnotesize{ Hires(t+1)} &&     \footnotesize{ Hires(t+1)} &&    \footnotesize{ Hires(t+1)}      &&  \footnotesize{ Hires(t+1)}       &&    \footnotesize{ Hires(t+1)}     \\
+        &&   Hires(t+1) &&     Hires(t+1) &&    Hires(t+1)      &&  Hires(t+1)       &&    Hires(t+1)     \\
 \hline
-\scriptsize{Vacancies(t) }       &&    0.272\sym{***} &&   0.0489\sym{***} &&   0.0495\sym{***} &&  0.00430         &&  0.00170          \\
-                    &&    (0.0142)         && (0.0112)         && (0.0110)         && (0.00956)         &&(0.00947)          \\
-\scriptsize{Plant size (t) }     &&                   &&    0.410\sym{***} &&   0.400\sym{***} &&    0.489\sym{***} &&    0.496\sym{***}\\
-                    &&                   && (0.0120)         && (0.0119)         && (0.0194)         && (0.0196)            \\
+Vacancies(t)        &&    0.27\sym{***} &&   0.05\sym{***} &&   0.05\sym{***} &&  0.00        &&  0.00          \\
+                    &&    (0.011)         && (0.011)         && (0.011)         && (0.01)         &&(0.01)          \\
+Plant size (t)     &&                   &&    0.41\sym{***} &&   0.40\sym{***} &&    0.49\sym{***} &&    0.5\sym{***}\\
+                    &&                   && (0.011)         && (0.011)         && (0.011)         && (0.02)            \\
 \hline
-\scriptsize{Time-fixed effects } && Yes                 && Yes                     &&           Yes          &&    Yes        &&    Yes      \\
-\scriptsize{Industry dummies}    && No                  && No                      &&     Yes                 &&    Yes        &&   Yes      \\
-\scriptsize{Value-added dummies} && No                  && No                      &&     No                 &&    Yes        &&    Yes      \\
-\scriptsize{Turnover dummies }   && No                  && No                      &&     No                 &&    No        &&    Yes      \\
+Time-fixed effects  && Yes                 && Yes                     &&           Yes          &&    Yes        &&    Yes      \\
+Industry dummies    && No                  && No                      &&     Yes                 &&    Yes        &&   Yes      \\
+Value-added dummies && No                  && No                      &&     No                 &&    Yes        &&    Yes      \\
+Turnover dummies    && No                  && No                      &&     No                 &&    No        &&    Yes      \\
 \hline
-\scriptsize{Observations}        &&    123819         &&   123788         &&   123788         &&    79097         &&   79097        \\
-\scriptsize{Adjusted} \(R^{2}\)  &&     0.275         &&    0.406         &&    0.411         &&    0.373         &&    0.374        \\
-\textit{AIC}        &&  360422.9         && 335545.9         && 334656.6         && 205583.9         && 205425.5           \\
+Observations        &&    123819         &&   123788         &&   123788         &&    79097         &&   79097        \\
+Adjusted \(R^{2}\)  &&     0.28         &&    0.41         &&    0.41         &&    0.37         &&    0.37        \\
+\textit{AIC}        &&  360422         && 335545         && 334656         && 205583         && 205425          \\
 \hline\hline
-\multicolumn{11}{l}{\footnotesize Notes: Standard errors in parentheses. \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\) }\\
-\end{tabularx}
+\multicolumn{11}{l}{\footnotesize Notes: Standard errors in parentheses. \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\). }\\
+\multicolumn{11}{l}{\footnotesize Standard errors are clustered on the firm level. }\\
+\end{tabularx}}
 \end{table}
 

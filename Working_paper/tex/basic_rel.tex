@@ -1,7 +1,35 @@
-\section{Relationship between vacancies and hires on the plant level}
+\section{Plant-level relationship between vacancies and hires}
 \label{sec:basic_rel}
 
-Basic search-matching theory assumes a linear relationship between hiring and vacancies on the plant level. In the standard search and matching model aggregate hiring is given by the input of unemployed workers $(U)$ and job-openings $(V)$ to an aggregate matching function with constant return to scale $H=M(U,V)$. Given  homogeneity of firms hiring in a firm $j$ will thus be a function of the aggregate vacancy yield and the number of job-openings on the firm level.
+\subsubsection{Descriptive statistics}
+
+\input{./tex/tables/hire_rate_vacancy_rate_vacancy_yield.tex}
+
+Table \ref{tab:vacancy_yield} presents the hiring rate, the vacancy rate and the vacancy yield in the cross-section of plants. The hiring and vacancy rate is expressed as the number of hires and vacancies per employee, while the vacancy yield is the number of hires per vacancy. Across industries the vacancy yield is lowest in construction with a yield of $1.37$ hires per vacancies, while it is highest in the manufacturing sector with a rate of $3.43$. Across plant size, as measured by number of employees, larger firms hire more workers per vacancies. Indeed, while the plants in the decile with fewest employees, measured in number of employees, only hire $0.3$ workers per vacancy, the plants in the decile with most employees hire $4.02$ workers per vacancy. Across turnover, measured on the firm level, a similar pattern is seen: plants in firms with larger turnover have a larger vacancy yield.
+
+TBD: Why is yield not just hires/vacancies?
+TBD: Do Table 1 with PES vacancies
+
+There are a number of potential explanations behind the observed heterogeneity in vacancy yields. First, plants may rely on other recruitment channels than vacancies such as uninvited applications or informal social networks. In case the reliance on such alternative recruitment varies across plant characteristics this may give rise to the pattern observed in Table \ref{tab:vacancy_yield}. For example \cite{Cahuc2009} construct a model where the probability of matching a job is increasing in the size of the social network. To the extent that larger plants have larger networks this can potentially explain why the vacancy yield is increasing plant size. Second, plants may rely on one vacancy to report more than one worker. If a plant is attempting to hire homogenous workers, it may only report one vacancy in spite on an intention to hire more than one worker. Such a behavior would predict a higher vacancy yield in industries with more homogeneity in the required skill set of workers.
+
+Many hires are even made without any vacancies. Figure \ref{fig:share_without} shows the share of all hires that are made in plants that did not report any vacancies in the preceding month. This share varies in the interval 40 \% - 50 \%, and falls to 30 \% - 40 \% if counting the share of hires that are made without any vacancies in the two preceding months (TBD: Add figure). Some of these hires can be accounted by hiring out of other channels than vacancies, but some might also be explained by time-aggregation issues. Indeed, since we only observe the stock of vacancies at a given point in time hiring may happen out of newly created vacancies that do not enter into the dataset. I will address this issue in Section \ref{sec:time_agg}.
+
+These initial descriptive statistics hint at an important role for the distribution of vacancies. Usually, we look at the sum of all vacancies to gauge the number of job-openings in the economy. However, the descriptive statistics reported above suggests that this is potentially misleading. Indeed, if the observed variation the vacancy yield is caused by variation in the underlying number of actual job-openings, then we need to account for the distribution when using vacancies as a measure of job-openings in the economy. 
+
+\begin{figure}[t]
+\centering
+%l b r t
+\caption{Share of all hires without vacancies in the preceding month, 2001-2012}
+\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=\textwidth]{../../Data/Server/figures/plot_share_hire_without_vacancies.pdf}
+\flushleft
+%\footnotesize{\emph{Notes:} The figure shows the average number of hires (y-axis) for each number of vacancies in the previous month (x-axis). } \\
+\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden.}
+\label{fig:share_without}
+\end{figure}
+
+\subsubsection{Estimating a hiring equation on the plant level}
+
+Basic search-matching theory assumes a linear relationship between hiring and vacancies on the plant level. In the standard search and matching model aggregate hiring is given by the input of unemployed workers $(U)$ and job-openings $(V)$ to an aggregate matching function with constant return to scale $H=M(U,V)$. Given  homogeneity of firms hiring in a firm $j$ will thus be a function of the aggregate vacancy yield and the number of job-openings on the plant level.
 \begin{align}
 H(t+1, j)=\frac{M(U(t),V(t))}{V(t)} V(t,j)
 \label{eq:ht+1}
@@ -10,7 +38,7 @@ Two predictions follows from this equation. First, in the cross-section of firms
 
 When investigating the relationship between hires and vacancies in the data one initial challenge is to specify the correct interval between vacancy and the relevant hire. To guide the choice of this interval, I draw the histogram of the distribution between start- and end-date of vacancies posted at the Public Employment Service (Figure \ref{fig:PES_duration}). The mean duration of a vacancy is 18 days, and 85 \% of the durations are less than a month. On the back of this I set the interval between vacancy and hire to one month, but I will investigate the robustness with respect to this choice below. 
 
-\begin{figure}[h]
+\begin{figure}[t]
 \centering
 %l b r t
 \caption{Duration of vacancies at the Public Employment Service, 2001-2012}
@@ -36,20 +64,9 @@ A first look at the data speaks against the predictions of a linear relationship
 
 Moreover, a substantial share of all hires are made without any vacancies in the preceding month. This is witnessed by the by the dot at zero vacancies being non-zero in Figure \ref{fig:crossplot}. Moreover, Figure \ref{fig:share_without} shows that the share of hires made without any vacancies over time varies between 40 \% - 50 \%. Some of this can be accounted for via time-aggregation issues as I will explain in section \ref{sec:agg_implications}. 
 
-\begin{figure}[h]
-\centering
-%l b r t
-\caption{Share of all hires without vacancies in the preceding month, 2001-2012}
-\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=\textwidth]{../../Data/Server/figures/plot_share_hire_without_vacancies.pdf}
-\flushleft
-%\footnotesize{\emph{Notes:} The figure shows the average number of hires (y-axis) for each number of vacancies in the previous month (x-axis). } \\
-\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden.}
-\label{fig:share_without}
-\end{figure}
 
-Across plant and firm characteristics a given number of vacancies are associated with different amount of hiring. Table \ref{tab:vacancy_yield} shows average hiring and vacancy rates as well as the average number of hires per vacancy. Across all plant groups there are more hires than vacancies. Moreover, there exist a substantial amount of heterogeneity in the number of hires per vacancy. Across industries it varies from 1.97 in the farming sector to 3.43 in the manufacturing sector. Across both number of employees and turnover we see that the vacancy yield is increasing with size. 
+%Across plant and firm characteristics a given number of vacancies are associated with different amount of hiring. Table \ref{tab:vacancy_yield} shows average hiring and vacancy rates as well as the average number of hires per vacancy. Across all plant groups there are more hires than vacancies. Moreover, there exist a substantial amount of heterogeneity in the number of hires per vacancy. Across industries it varies from 1.97 in the farming sector to 3.43 in the manufacturing sector. Across both number of employees and turnover we see that the vacancy yield is increasing with size. 
 
-\input{./tex/tables/hire_rate_vacancy_rate_vacancy_yield.tex}
 
 I now turn to the specific relationship between vacancies and hires on the plant level. As mentioned, we should, according to the basic search and matching model, expect the relationship between vacancies and hires to be characterised by the relationship in \eqref{eq:ht+1}. To test whether this is in fact the case, while allowing for the possibility of a non-linear relationship, I will estimate the following equation using the plant-level data.
 \begin{align}
