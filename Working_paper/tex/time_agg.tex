@@ -11,7 +11,7 @@ Specifically, \cite{Davis2013} model the daily dynamics of of hires and vacancie
 h_{s,t}&=f_t v_{s-1,t} \label{eq:hires_dyn} \\
 v_{s,t}&=(1-f_t)(1-\delta_t)v_{s-1,t} + \theta_t \label{eq:vacancies_dyn} 
 \end{align}
-here $h_{s,t}$ is the number of hires at day $s$ in month $t$, $v_{s,t}$ is the number of vacancies at day $s$ in month $t$, $f_t$ is the daily job-filling rate, $\delta_t$ is the daily and $\theta_t$ is the inflow of new vacancies each day. Both $f_t$, $\delta_t$ and $\theta_t$ are assumed to be constant throughout each month. Equation \eqref{eq:hires_dyn} is thus telling us that the number of hires at day $s$ in month $t$ is equal to the number of vacancies yesterday multiplied by the vacancy filling rate. Likewise, equation \eqref{eq:vacancies_dyn} tells us that the number of vacancies at day $s$ in  month $t$ is equal to the number of vacancies from yesterday, which were not filling nor depleted, plus the inflow of new vacancies. 
+here $h_{s,t}$ is the number of hires at day $s$ in month $t$, $v_{s,t}$ is the number of vacancies at day $s$ in month $t$, $f_t$ is the daily job-filling rate, $\delta_t$ is the daily depletion rate\footnote{That is, the daily rate by which vacancies are taken of the market without having been filled.} and $\theta_t$ is the inflow of new vacancies each day. Both $f_t$, $\delta_t$ and $\theta_t$ are assumed to be constant throughout each month. Equation \eqref{eq:hires_dyn} is thus telling us that the number of hires at day $s$ in month $t$ is equal to the number of vacancies yesterday multiplied by the vacancy filling rate. Likewise, equation \eqref{eq:vacancies_dyn} tells us that the number of vacancies at day $s$ in  month $t$ is equal to the number of vacancies from yesterday, which were not filled nor depleted, plus the inflow of new vacancies. 
 
 Solving \eqref{eq:hires_dyn} and \eqref{eq:vacancies_dyn} forward yields an expression for stock of vacancies and the flow of hires in month $t$.
 \begin{align}
@@ -20,11 +20,9 @@ h_t&=f_t v_{t-1} \sum_{s=1}^{\tau} \left( 1-f_t-\delta_t+\delta_t f_t \right)^{s
 \end{align}
 where $\tau$ is the number of days per months. The first expression on the righthand side of equation \eqref{eq:v_t} denotes the number of vacancies from month $t-1$ that carried over to month $t$. The second expression captures the remainder from the flow of newly created vacancies. Likewise, the first righthand side expression in equation \eqref{eq:h_t} denotes hires out of vacancies posted in period $t-1$, while the second expression denotes hires out of newly created vacancies. 
 
-The task is now to solve the equation system, \eqref{eq:v_t}-\eqref{eq:h_t}, numerically for $\{ f_t, \theta_t \}$. This is possible given $\tau$ and time-series for the triplet of variables $\{\delta_t, h_t, v_t \}$. $h_t$ and $v_t$ are available from the data and I set $\tau=22$ (working days per month). $\delta_t$ is less obvious how to compute, but  I follow \cite{Davis2013} and set $\tau \delta_t$ equal to monthly job-destruction rate.\footnote{Specifically, I set $\tau \delta_t$ equal to the monthly probability of not staying in a regular contract. This data is available the Swedish labor market survey.} However, as robustness I vary $\tau \delta_t$ in the interval $[0,10\%]$. This impacts very little on the calibrated values for $f_t$ and $\theta_t$.
-
 Given $\tau$ and time series for the triplet $\{\delta_t, h_t, v_t \}$ one can solve this equation system numerically the time series for $\{ f_t, \theta_t \}$. $h_t$ and $v_t$ is available from the data and I set $\tau=26$ (working days per month). $\delta_t$ is less obvious how to compute, but as of now I follow \cite{Davis2013} and $\tau \delta_t$ equal to monthly job-destruction rate.\footnote{Specifically, I set $\tau \delta_t$ equal to the monthly probability of not staying in a regular contract. This data is available the Swedish labor market survey.} TBD: However, as robustness I vary $\tau \delta_t$ in the interval $[0,10\%]$ and show that this impacts very little on the calibrated values for $f_t$ and $\theta_t$.
 
-Figure \ref{fig:filling_rates} shows the calibrated time-series for $f_t$ and $\theta_t$. The calibrated monthly inflow of new vacancies is $0.6 \%$ of the labor force on average and varies in the interval $0.2-0.8 \%$. The daily fill-rate of vacancies has an average of $2.5 \%$, which corresponds to an average duration of 40days, and varies in the interval $1-3.5\%$. 
+Figure \ref{fig:filling_rates} shows the calibrated time-series for $f_t$ and $\theta_t$. The calibrated monthly inflow of new vacancies is on average $0.6 \%$ of the labor force and varies in the interval $0.2-0.8 \%$. The daily fill-rate of vacancies is on average $2.5 \%$, which corresponds to an average duration of 40 days, and varies in the interval $1-3.5\%$. 
 
 \begin{figure}[t]
 \centering
@@ -36,25 +34,30 @@ Figure \ref{fig:filling_rates} shows the calibrated time-series for $f_t$ and $\
 \label{fig:filling_rates}
 \end{figure}
 
-Using the calibrated model I now address the problem of time-aggregation. First, I use the calibrated job-filling  and vacancy creation rates to compute the predicted number of vacancies at each plant in the end of each month. 
+Using the calibrated model I can now address the problem of time-aggregation. First, I use the calibrated job-filling  and vacancy creation rates to compute the predicted number of vacancies at each plant in the end of each month. 
 \begin{align}
 v_{t,ultimo}=\left( 1-f_t-\delta_t+\delta_t f_t \right)^{\tau/2} v_{t,medio} + \theta_t \sum_{s=1}^{\tau/2} \left( 1-f_t-\delta_t f_t \right)^{s-1} \label{eq:vt_ultimo}
 \end{align}
 Second, I compute hires in each month corrected for the number of hires that are predicted to be associated with newly created vacancies. 
 \begin{align}
-h_{t,corr}=h_t-f_t \theta_t \sum_{s=1}^{\tau} \left( \tau- s\right) \left( 1-f_t-\delta_t+\delta_t f_t \right)^{s-1} \label{eq:ht_corr}
+h_{t,corrected}=h_t-f_t \theta_t \sum_{s=1}^{\tau} \left( \tau- s\right) \left( 1-f_t-\delta_t+\delta_t f_t \right)^{s-1} \label{eq:ht_corr}
 \end{align}
-To compute $v_{t,ultimo}$ and $h_{t,corr}$ in \eqref{eq:vt_ultimo} and \eqref{eq:ht_corr} I use values for $f_t$ and $\theta_t$ calibrated on the industry level. I let $f_t$ be identical across all plants in a given industry, while I compute a plant specific value of $\theta_t$ by weighting the value computed on the industry level with the plant's share of employment in the given industry. 
+To compute $v_{t,ultimo}$ and $h_{t,corrected}$ in \eqref{eq:vt_ultimo} and \eqref{eq:ht_corr} I use values of $f_t$ and $\theta_t$ calibrated on the industry level. I let $f_t$ be identical across all plants in a given industry, while I compute a plant specific value of $\theta_t$ by weighting the value computed on the industry level with the plant's share of employment in the relevant industry. 
 
-Having computed $v_{t,ultimo}$ and $h_{t,corr}$ I can now redo the analysis from Section \ref{sec:basic_rel}. In Table \ref{tab:robust_timeagg}, I re-estimate the relationship between hiring and vacancies while gradually increasing the number of plant- and firm-level characteristics. The pattern remains unchanged: (1) The relationship between hires and vacancies is concave, not linear, (2) the exponent on vacancies goes towards zero as I increase the number of plant- and firm-level characteristics and (3) the fit of regression is improved by allowing job-openings to be a function of plant-size as well as of posted vacancies. 
+Having computed $v_{t,ultimo}$ and $h_{t,corrected}$ I can now redo the analysis from Section \ref{sec:basic_rel}. In Table \ref{tab:robust_timeagg}, I re-estimate the relationship between hiring and vacancies while gradually increasing the number of plant- and firm-level characteristics. The pattern remains unchanged: (1) The estimated relationship between hires and vacancies is concave, not linear, (2) the exponent on vacancies goes towards zero as I increase the number of plant- and firm-level characteristics and (3) the fit of regression is improved by allowing job-openings to be a function of plant-size as well as of posted vacancies. 
+TBD: Add NLS esimtation
+TBD: How is number of hires without vacancies changed? Insert in appendix.
+TBD: Check selection issue. Insert as footnote.
+
+\FloatBarrier
 
 \input{./tex/tables/table_est_ols_robust_timeagg.tex}
-TBD: Insert this table as NLS
+\input{./tex/tables/table_est_nls_robust_timeagg.tex}
 
 \subsubsection{Additional robustness checks}
 
 In addition, I conduct two other robustness checks in the Appendix. 
 
-First, in spite of the evidence presented above, one might question the choice of relating vacancies in one month to hires in the next month only. To address the sensitivity of my analysis with respect to this choice, I redo the analysis in Table \ref{tab:main_ols} and \ref{tab:main_nls} while relating the number of vacancies in a given month the the \emph{average number of hires over the next months}. This analysis is presented in Table TBD in the Appendix, and does not overturn the results from Table \ref{tab:main_ols} and \ref{tab:main_nls}.
+First, one might question the choice of relating vacancies in one month to hires in the next month only. Especially, when contrasting the evidence on vacancy durations from the Public Employment Service from Figure \ref{fig:PES_duration} with the calibrated fill rates in Figure \ref{fig:filling_rates}. To address the sensitivity of my analysis with respect to this choice, I redo the analysis in Table \ref{tab:main_ols} and \ref{tab:main_nls} while relating the number of vacancies in a given month the the \emph{average number of hires over the two next months}. This analysis is presented in Table TBD in the Appendix, and does not overturn the results from Table \ref{tab:main_ols} and \ref{tab:main_nls}.
 
-Second, a shortcoming of my dataset is the lack of a panel structure for vacancies. This makes it impossible to aggregate both vacancies and hires to the annual level, and then relate the yearly number of hiring to the yearly number of vacancies. However, for some plants I more than one observation per year. As a robustness check I therefore restrict my sample to plants, where I have at least three observations per year. Using this sample I relate the average number of hires per year to the average number of vacancies per year.  The results from the exercise is also presented in Table TBD in the Appendix, and do also not overturn the results from Table \ref{tab:main_ols} and \ref{tab:main_nls}.
+Second, a shortcoming of my dataset is the lack of a panel structure for vacancies. This makes it impossible to aggregate both vacancies and hires to the annual level, and then relate the yearly number of hiring to the yearly number of vacancies. However, for some plants I do have more than one observation per year. As a robustness check I therefore restrict my sample to plants, where I have at least three observations per year. Using this sample I relate the average number of hires per year to the average number of vacancies per year.  The results from the exercise is also presented in Table TBD in the Appendix, and do also not overturn the results from Table \ref{tab:main_ols} and \ref{tab:main_nls}.
