@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.16)  18 DEC 2015 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.16)  21 DEC 2015 04:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -876,33 +876,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/.texpadtmp/Working_paper.aux
-
-LaTeX Warning: Label `fig:openings_timeserie' multiply defined.
-
-
-LaTeX Warning: Label `fig:agg_PES_survey_share' multiply defined.
-
-
-LaTeX Warning: Label `tab:robust_timeagg' multiply defined.
-
-)
+ (/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/.texpadtmp/Working_paper.aux)
 \openout1 = `Working_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -973,7 +963,7 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 48.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -983,74 +973,58 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 46.
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 (/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/.texpadtmp/Working_paper.out) (/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/.texpadtmp/Working_paper.out)
 \@outlinefile=\write4
 \openout4 = `Working_paper.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 49.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 49.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
  (./tex/abstract.tex) [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./tex/introduction.tex [2]
+Underfull \vbox (badness 2818) has occurred while \output is active []
 
-Package natbib Warning: Citation `Davis2014' on page 3 undefined on input line 21.
-
-
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
- [3] [4]) (./tex/data.tex [5]
+ [3] [4]) (./tex/data.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [5]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf, id=164, 397.485pt x 289.08pt>
+<../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf, id=152, 397.485pt x 289.08pt>
 File: ../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf Graphic file (type pdf)
  <use ../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf>
-Package pdftex.def Info: ../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf used on input line 24.
+Package pdftex.def Info: ../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf used on input line 25.
 (pdftex.def)             Requested size: 397.48402pt x 289.07928pt.
 
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../../Data/Server/fig_survey_tax_hires_timeserie.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../../Data/Server/fig_survey_tax_hires_timeserie.pdf, id=166, 397.485pt x 289.08pt>
+<../../Data/Server/fig_survey_tax_hires_timeserie.pdf, id=154, 397.485pt x 289.08pt>
 File: ../../Data/Server/fig_survey_tax_hires_timeserie.pdf Graphic file (type pdf)
  <use ../../Data/Server/fig_survey_tax_hires_timeserie.pdf>
-Package pdftex.def Info: ../../Data/Server/fig_survey_tax_hires_timeserie.pdf used on input line 37.
+Package pdftex.def Info: ../../Data/Server/fig_survey_tax_hires_timeserie.pdf used on input line 38.
 (pdftex.def)             Requested size: 397.48402pt x 289.07928pt.
- [6] [7 <../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf>] [8 <../../Data/Server/fig_survey_tax_hires_timeserie.pdf>]) (./tex/basic_rel.tex (./tex/tables/hire_rate_vacancy_rate_vacancy_yield.tex (../../Data/Server/tables/table_survey_tax_hire_ratios_by_industry.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_plantsize.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_turnover.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_industry.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_plantsize.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_turnover.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_industry.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_plantsize.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_turnover.txt)
-Overfull \hbox (16.26617pt too wide) in alignment at lines 24--24
+ [6]
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+ [7 <../../Data/Server/fig_openings_PES_survey_firmlevel_timeseries.pdf>]) (./tex/basic_rel.tex (./tex/tables/hire_rate_vacancy_rate_vacancy_yield.tex (../../Data/Server/tables/table_survey_tax_hire_ratios_by_industry.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_plantsize.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_turnover.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_industry.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_plantsize.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_turnover.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_industry.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_plantsize.txt) (../../Data/Server/tables/table_survey_tax_hire_ratios_by_turnover.txt)
+Overfull \hbox (16.26617pt too wide) in alignment at lines 25--25
 [][][][] 
  []
 
-)
 
-Package natbib Warning: Citation `Moscarini2015' on page 9 undefined on input line 8.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [8 <../../Data/Server/fig_survey_tax_hires_timeserie.pdf>])
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../../Data/Server/figures/plot_medio_survey_v_hires_integer.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../../Data/Server/figures/plot_medio_survey_v_hires_integer.pdf, id=224, 397.485pt x 289.08pt>
+<../../Data/Server/figures/plot_medio_survey_v_hires_integer.pdf, id=213, 397.485pt x 289.08pt>
 File: ../../Data/Server/figures/plot_medio_survey_v_hires_integer.pdf Graphic file (type pdf)
  <use ../../Data/Server/figures/plot_medio_survey_v_hires_integer.pdf>
 Package pdftex.def Info: ../../Data/Server/figures/plot_medio_survey_v_hires_integer.pdf used on input line 21.
@@ -1058,153 +1032,119 @@ Package pdftex.def Info: ../../Data/Server/figures/plot_medio_survey_v_hires_int
  [9] [10]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../../Data/Server/figures/plot_share_hire_without_vacancies.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../../Data/Server/figures/plot_share_hire_without_vacancies.pdf, id=243, 397.485pt x 289.08pt>
+<../../Data/Server/figures/plot_share_hire_without_vacancies.pdf, id=233, 397.485pt x 289.08pt>
 File: ../../Data/Server/figures/plot_share_hire_without_vacancies.pdf Graphic file (type pdf)
  <use ../../Data/Server/figures/plot_share_hire_without_vacancies.pdf>
 Package pdftex.def Info: ../../Data/Server/figures/plot_share_hire_without_vacancies.pdf used on input line 34.
-(pdftex.def)             Requested size: 455.24411pt x 331.09846pt.
-
-Underfull \vbox (badness 4699) has occurred while \output is active []
-
- [11 <../../Data/Server/figures/plot_medio_survey_v_hires_integer.pdf>] [12 <../../Data/Server/figures/plot_share_hire_without_vacancies.pdf>]
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../../Data/Server/figures/plot_PES_duration.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../../Data/Server/figures/plot_PES_duration.pdf, id=287, 397.485pt x 289.08pt>
-File: ../../Data/Server/figures/plot_PES_duration.pdf Graphic file (type pdf)
- <use ../../Data/Server/figures/plot_PES_duration.pdf>
-Package pdftex.def Info: ../../Data/Server/figures/plot_PES_duration.pdf used on input line 58.
 (pdftex.def)             Requested size: 397.48402pt x 289.07928pt.
- [13 <../../Data/Server/figures/plot_PES_duration.pdf>] [14] (./tex/tables/table_est_ols.tex
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <../../Data/Server/figures/plot_medio_survey_v_hires_integer.pdf>] [12 <../../Data/Server/figures/plot_share_hire_without_vacancies.pdf>] (./tex/tables/table_est_ols.tex
 Overfull \hbox (17.93445pt too wide) in paragraph at lines 27--28
 [][] 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./tex/tables/table_est_nls.tex
-Overfull \hbox (17.93445pt too wide) in paragraph at lines 25--26
+Overfull \hbox (17.93445pt too wide) in paragraph at lines 26--27
 [][] 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 95.
-
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 95.
-
-
-Underfull \vbox (badness 2005) has occurred while \output is active []
-
- [15
-
-]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]) (./tex/time_agg.tex [17] <../../timagg/job_filling_creation_rate_figure.pdf, id=383, 845.1575pt x 597.45204pt>
+ [13]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 86.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 86.
+
+[14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]) (./tex/time_agg.tex [16] <../../timagg/job_filling_creation_rate_figure.pdf, id=356, 845.1575pt x 597.45204pt>
 File: ../../timagg/job_filling_creation_rate_figure.pdf Graphic file (type pdf)
  <use ../../timagg/job_filling_creation_rate_figure.pdf>
-Package pdftex.def Info: ../../timagg/job_filling_creation_rate_figure.pdf used on input line 33.
+Package pdftex.def Info: ../../timagg/job_filling_creation_rate_figure.pdf used on input line 31.
 (pdftex.def)             Requested size: 455.24411pt x 230.20642pt.
- [18] [19 <../../timagg/job_filling_creation_rate_figure.pdf, page is rotated 90 degrees>] (./tex/tables/table_est_ols_robust_timeagg.tex
-Overfull \hbox (21.34525pt too wide) in paragraph at lines 26--27
-[][] 
+ [17]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../../Data/Server/figures/plot_share_hire_without_vacancies_timeagg.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../../Data/Server/figures/plot_share_hire_without_vacancies_timeagg.pdf, id=376, 397.485pt x 289.08pt>
+File: ../../Data/Server/figures/plot_share_hire_without_vacancies_timeagg.pdf Graphic file (type pdf)
+ <use ../../Data/Server/figures/plot_share_hire_without_vacancies_timeagg.pdf>
+Package pdftex.def Info: ../../Data/Server/figures/plot_share_hire_without_vacancies_timeagg.pdf used on input line 55.
+(pdftex.def)             Requested size: 397.48402pt x 289.07928pt.
+ [18 <../../timagg/job_filling_creation_rate_figure.pdf, page is rotated 90 degrees>] (./tex/tables/table_est_ols_robust_timeagg.tex
+Overfull \hbox (19.15204pt too wide) in alignment at lines 27--27
+[][][][][][][][][][] 
  []
 
-)) (./tex/aggregate_implications.tex
+) (./tex/tables/table_est_nls_robust_timeagg.tex)) [19 <../../Data/Server/figures/plot_share_hire_without_vacancies_timeagg.pdf>] (./tex/aggregate_implications.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
-Underfull \vbox (badness 2707) has occurred while \output is active []
-
- [21] (../../Data/Not_Server/Matching_estimation/tables/matching_fct_table_nsa.tex) [22]
-Overfull \hbox (1.80205pt too wide) in paragraph at lines 32--33
-\T1/cmr/m/n/12 eridge curve can be ex-plained ex-plained by mea-sure-ment is-sues. Va-can-cies quickly bounced
- []
-
-<../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf, id=463, 397.485pt x 289.08pt>
+ [20] (../../Data/Not_Server/Matching_estimation/tables/matching_fct_table_nsa.tex) [21] [22] <../../Data/Not_Server/Matching_estimation/figures/fig_tightness.pdf, id=470, 397.485pt x 289.08pt>
+File: ../../Data/Not_Server/Matching_estimation/figures/fig_tightness.pdf Graphic file (type pdf)
+ <use ../../Data/Not_Server/Matching_estimation/figures/fig_tightness.pdf>
+Package pdftex.def Info: ../../Data/Not_Server/Matching_estimation/figures/fig_tightness.pdf used on input line 37.
+(pdftex.def)             Requested size: 455.24411pt x 331.09846pt.
+ <../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf, id=472, 397.485pt x 289.08pt>
 File: ../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf Graphic file (type pdf)
  <use ../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf>
-Package pdftex.def Info: ../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf used on input line 39.
+Package pdftex.def Info: ../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf used on input line 48.
 (pdftex.def)             Requested size: 455.24411pt x 331.09846pt.
-) (./tex/PES_survey_rel.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23 <../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf>] <../../Data/Server/figures/plot_PES_v_survey_all_cfarshare1.png, id=476, 710.655pt x 515.9275pt>
-File: ../../Data/Server/figures/plot_PES_v_survey_all_cfarshare1.png Graphic file (type png)
- <use ../../Data/Server/figures/plot_PES_v_survey_all_cfarshare1.png>
-Package pdftex.def Info: ../../Data/Server/figures/plot_PES_v_survey_all_cfarshare1.png used on input line 12.
-(pdftex.def)             Requested size: 455.24411pt x 330.50737pt.
- [24 <../../Data/Server/figures/plot_PES_v_survey_all_cfarshare1.png (PNG copy)>] (./tex/tables/PES_survey_ratios.tex (../../Data/Server/tables/table_PES_survey_ratio_by_industry.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_size.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_turnover.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_valueadded.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_industry.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_size.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_turnover.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_valueadded.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_industry.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_size.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_turnover.txt) (../../Data/Server/tables/table_PES_survey_ratio_by_valueadded.txt)
-Overfull \hbox (31.47862pt too wide) in alignment at lines 30--30
-[][][][][][] 
- []
 
 
-LaTeX Warning: Float too large for page by 28.22827pt on input line 31.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-)
+) [23 <../../Data/Not_Server/Matching_estimation/figures/fig_tightness.pdf>] (./tex/conclusion.tex
+Underfull \vbox (badness 3724) has occurred while \output is active []
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../../Data/Server/figures/plot_PES_survey_ratio_incl_pub_2004_MA.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../../Data/Server/figures/plot_PES_survey_ratio_incl_pub_2004_MA.pdf, id=488, 397.485pt x 289.08pt>
-File: ../../Data/Server/figures/plot_PES_survey_ratio_incl_pub_2004_MA.pdf Graphic file (type pdf)
- <use ../../Data/Server/figures/plot_PES_survey_ratio_incl_pub_2004_MA.pdf>
-Package pdftex.def Info: ../../Data/Server/figures/plot_PES_survey_ratio_incl_pub_2004_MA.pdf used on input line 29.
+ [24 <../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf>]) [25] (./tex/appendix.tex (../../Data/Server/tables/table_bg_descriptive_stat.tex)
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../../Data/Server/figures/plot_PES_duration.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../../Data/Server/figures/plot_PES_duration.pdf, id=495, 397.485pt x 289.08pt>
+File: ../../Data/Server/figures/plot_PES_duration.pdf Graphic file (type pdf)
+ <use ../../Data/Server/figures/plot_PES_duration.pdf>
+Package pdftex.def Info: ../../Data/Server/figures/plot_PES_duration.pdf used on input line 23.
 (pdftex.def)             Requested size: 397.48402pt x 289.07928pt.
-) [25 <../../Data/Server/figures/plot_PES_survey_ratio_incl_pub_2004_MA.pdf>] [26] (./tex/conclusion.tex) [27] (./tex/appendix.tex (../../Data/Server/tables/table_bg_descriptive_stat.tex)
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../../Data/Server/figures/plot_medio_survey_v_hires_integer_panel.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../../Data/Server/figures/plot_medio_survey_v_hires_integer_panel.pdf, id=516, 397.485pt x 289.08pt>
-File: ../../Data/Server/figures/plot_medio_survey_v_hires_integer_panel.pdf Graphic file (type pdf)
- <use ../../Data/Server/figures/plot_medio_survey_v_hires_integer_panel.pdf>
-Package pdftex.def Info: ../../Data/Server/figures/plot_medio_survey_v_hires_integer_panel.pdf used on input line 12.
-(pdftex.def)             Requested size: 455.24411pt x 331.09846pt.
- (./tex/tables/table_est_ols_robust_timeagg.tex
-Overfull \hbox (21.34525pt too wide) in paragraph at lines 26--27
-[][] 
- []
-
-) (./tex/tables/table_est_ols_robust_2m_avg.tex
-
-Class memoir Warning: X Columns too narrow (table too wide)
-(memoir)               on input line 25.
-
-
-Overfull \hbox (52.54716pt too wide) in alignment at lines 25--25
+ (./tex/tables/table_est_ols_robust_2m_avg.tex) (./tex/tables/table_est_ols_robust_year_avg.tex
+Overfull \hbox (5.73048pt too wide) in alignment at lines 27--27
 [][][][][][][][][] 
  []
 
-)) [28 <../../Data/Server/figures/plot_medio_survey_v_hires_integer_panel.pdf>] [29] (/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/.texpadtmp/Working_paper.bbl [30
+) (./tex/tables/table_est_ols_robust_same_sample.tex)) [26 <../../Data/Server/figures/plot_PES_duration.pdf>] [27] [28] (/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/.texpadtmp/Working_paper.bbl [29
 
-])
-
-Package natbib Warning: There were undefined citations.
-
-[31]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+]) [30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
  (/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/.texpadtmp/Working_paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
 Package rerunfilecheck Info: File `Working_paper.out' has not changed.
-(rerunfilecheck)             Checksum: 55A7257875CC9DDDED23E0933CE2F407;543.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 49BF21B72689665EF4CFF7991952CE52;414.
  ) 
 Here is how much of TeX's memory you used:
- 13558 strings out of 493089
- 202760 string characters out of 6134841
- 355284 words of memory out of 5000000
- 16594 multiletter control sequences out of 15000+600000
- 36986 words of font info for 110 fonts, out of 8000000 for 9000
+ 13433 strings out of 493089
+ 199000 string characters out of 6134841
+ 361009 words of memory out of 5000000
+ 16516 multiletter control sequences out of 15000+600000
+ 26341 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,15n,40p,1532b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on "/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/.texpadtmp/Working_paper.pdf" (31 pages, 1116247 bytes).
+ 39i,15n,40p,1471b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on "/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/.texpadtmp/Working_paper.pdf" (30 pages, 981300 bytes).
 PDF statistics:
- 668 PDF objects out of 1000 (max. 8388607)
- 550 compressed objects within 6 object streams
- 116 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 643 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
