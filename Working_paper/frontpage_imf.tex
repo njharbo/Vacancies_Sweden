@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt,article]{memoir}
+%Layout
+	\usepackage[a4paper,left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+	\usepackage{authblk}
+	\usepackage{rotating}
+	\DisemulatePackage{setspace}
+	\usepackage{setspace}
+	%\onehalfspacing
+	\linespread{1.3}
+	\counterwithout{section}{chapter}
+	\usepackage[hang,small,bf]{caption}
+	\setcounter{secnumdepth}{2}
+%Fonts and encoding
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{amsmath}
+	\usepackage{bm}
+	\usepackage[T1]{fontenc}
+	\usepackage[utf8]{inputenc}
+	\usepackage{csquotes}
+%Graphics and tables
+	\usepackage{graphicx}
+	\usepackage{graphics}
+	\usepackage{placeins}
+	\usepackage{tabularx,booktabs}
+	\usepackage{longtable}
+	\usepackage{subfig}
+	\usepackage{rotating}
+	\usepackage{array,multirow}
+	\usepackage{threeparttable}
+	\usepackage{lscape} 
+	\usepackage{array} 
+	\usepackage{float} 
+%References
+	\usepackage{natbib}
+	\bibliographystyle{chicago}
+	\usepackage{hyperref}
+% Handle Stata input    
+    \newcommand{\sym}[1]{$^{#1}$}	
+
+%Frontpage
+\title{Mis-Measuring Job Openings: \\ Evidence from Plant Level Data}
+\author{Niels-Jakob Harbo Hansen\thanks{IIES, nielsjakobharbo.hansen@iies.su.se}} 
+\date{This version: December 20, 2015}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\pagenumbering{gobble}
+\begin{document}
+\maketitle 
+
+
+%\begin{abstract}
+%\input{./tex/abstract}
+%\end{abstract}
+
+\end{document}
