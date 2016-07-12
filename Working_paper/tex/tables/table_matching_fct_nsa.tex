@@ -1,0 +1,20 @@
+%% Begin top
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Matching function, non-seasonally adjusted \label{tab:matchning_nsa}}
+\begin{tabular*}{1\hsize}{@{\hskip\tabcolsep\extracolsep\fill}l*{3}{c}}
+\toprule
+%% end top
+
+\input{\datadir Data/Not_Server/Matching_estimation/tables/matching_fct_table_nsa}
+\bottomrule
+
+%% Begin top
+\end{tabular*}
+   \begin{tablenotes}[flushleft]
+      \small
+\item \emph{Notes:} Quarterly data for 2001-2012. Robust standard errors in parenthesis. \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\), jfr: Job-finding rate, u: unemployment, v: Vacancies. Plants: Number of plants with a positive number of vacancies. Plants, weighted: Number of plants weighted by number of employees. \\
+\item  \emph{Source:} Own calculations on data from Statistics Sweden
+    \end{tablenotes}
+\end{table}
+%% End top

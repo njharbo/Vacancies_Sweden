@@ -1,13 +1,38 @@
 \section{Aggregate implications}
 \label{sec:agg_implications}
 
-The findings above potentially have important implications for how we should measure job-openings on the aggregate level. Indeed, my findings on the plant level suggest that an indicator variable for whether or not a plant has any vacancies multiplied by a concave function of plant size is a superior measure of job-openings \emph{vis-a-vis} the number of vacancies posted by the relevant plant. Taken to the aggregate level this suggests that the number of plants with a positive number of vacancies, weighted by a function of their respective sizes, provides a better measure of job-openings in the economy than the sum of all vacancies. 
+In the sections above I have showed that the number of hires a given number of vacancies is associated with is heterogenous across the distribution of plants and vacancies. Specifically, on the plant level I found that (i) the relationship between vacancies and subsequent hires is concave and (ii) that a given number of vacancies is associated with more hiring in larger plants.
 
-To test this hypothesis, I rely on matching functions estimated on aggregate data for unemployment, job-openings and job-finding rates. Specifically, I follow the search-matching literature and assume that the aggregate matching function takes the following form. 
+These findings have a number of potential interpretations. One interpretation is that our vacancy \emph{measure} does a poor job in measuring the actual number of job-openings in the economy. Consequently, we thus should think about constructing alternative measures. Another interpretation is that our \emph{model} for matching on the labor market should allow for heterogeneity on the plant level. 
+
+In this section, I consider both these interpretations in turn and discuss their aggregate labor market implications. First, I construct a simple alternative measure of aggregate job-openings in the economy informed by my findings on the plant level. I use this measure to reassess the aggregate development on the Swedish labor market. Second, I construct and parametrize a simple matching model, which allows for heterogenity across job-openings. Specifically, it allows job-openings to translate into a different number of hires dependent on plant characteristics. That is, some plants are more efficient at matching than others. Using an estimated version of this model I also revisit the aggregate development on the Swedish labor market. 
+
+\subsection{An alternative measure for job-openings}
+
+One interpretation of my results above is that our measure of job-openings can be improved. Indeed, my findings on the plant level suggest that an indicator variable for whether or not a plant has any vacancies, multiplied by a concave function of plant size, is a superior measure of job-openings \emph{vis-a-vis} the number of vacancies posted at the relevant plant. Taken to the the aggregate level, this interpretation would imply that the number of plants with a positive number of vacancies, weighted by a function of their respective sizes, provides a better measure of job-openings in the economy than the sum of all vacancies. 
+
+Inspired by these plant level findings, I construct two new aggregate measures for job-openings. Specifically, I compute:
+\begin{align}
+V_{alt,1}&=\sum_{j} I \left( V_j >0 \right) \label{eq:V_alt1} \\
+V_{alt,2}&=J\sum_{j} \left [  \frac{ I \left( V_j >0 \right) E_j}{\sum_j E_j} \right] \label{eq:V_alt2} 
+\end{align}
+here $I()$ is an indicator function, $V_j$ is the number of vacancies in plant $j$, $E_j$ is the employment at plant $j$ and $J$ is the number of plants in the economy. Thus, $V_{alt,1}$ is the sum of all plants with non-zero vacancies, while $V_{alt,2}$ is the sum of all plants with non-zero vacancies weighted by their share of total employment. I construct these measures using the micro data in the Swedish \emph{Job Vacancy Survey} applying sample weights. Due to the change in the sampling level in 2006 for the public sector, described in Section \ref{sec:data}, I will restrict data to the private sector.\footnote{Specifically, I remove data from the industry \emph{Public and Personal Services}.} The purpose of these alternative measures is, in a very simple manner, to account for the distributional issues of vacancies that I have found above.
+
+The alternative measures offers a somewhat different description of the recent development on the Swedish labor market. Figure \ref{fig:openings_std_and_alt} shows the development of job-openings in the Swedish economy using the traditional and alternative vacancy measure, respectively. The development in the time-series are broadly similar, with the notable exception of the lastest post-recession period. Here the traditional measure bounces back to a level above the pre-recession period. The alternative measure using plants with non-zero vacancies bounces back to a level around its previous peak, while the other alternative measure, where plants are weighted by employment shares, stays below the pre-recession peak. 
+
+A similar picture is seen when looking at the development in labor market tightness (Figure \ref{fig:tightness}). Using the traditional measure for job-openings the labor market was almost equally tight before and after the latest recession. When using the number of plants with non-zero vacancies as measure for job-openings, the labor market is however substantially less tight after the recession. Even more so when using the number of plants weighted with the employment share. 
+
+The differences in measured job-openings and tightness stem from the distribution of vacancies. 
+%First, vacancies bounced back after the Great Recession, but the share of plants with zero vacancies remained higher than before Great Recession (Figure \ref{fig:plants_zero_vacan}). 
+Indeed, the bounce back happened less in larger plants (Figure \ref{fig:vacancies_across_size}), where the vacancy yield is higher than in smaller plants. Taken together this implies that the apparent surge in vacancies after the Great Recessions may partly have been deceptive: Vacancies soared, but more so in plants where the vacancy yield was low. Consequently, the traditional vacancy measure may have made the labor market look tighter than it actually was during the recovery.
+
+\subsubsection{Aggregate matching function}
+
+To investigate the aggregate implications of using these alternative measures for job openings, I rely on estimated matching functions estimated on aggregate data for unemployment, job-openings and job-finding probabilities. Specifically, I follow the search-matching literature and assume that the aggregate matching function takes the following form. 
 \begin{align}
 M(U(t), V(t))=AU(t)^{\alpha}V(t)^{1-\alpha}
 \end{align}
-Consequently, the job-finding rate can be written as
+Consequently, the job-finding probability can be written as
 \begin{align}
 \frac{M(U(t), V(t))}{U(t)}=AU(t)^{\alpha-1} V(t)^{1-\alpha}
 \end{align}
@@ -16,38 +41,87 @@ which in log terms yields
 \log\left(\frac{M(U(t), V(t))}{U(t)}\right) =\log(A)+\left(1-\alpha\right)\log\left(\frac{V(t)}{U(t)}\right) \label{eq:matching_fct_log}
 \end{align}
 
-In Table \ref{tab:agg_matching_fct}, I report the estimated matching function \eqref{eq:matching_fct_log} using both the standard vacancy measure and my alternative measure for job-openings. The matching function is estimated on Swedish data during the period 2001Q1-2012Q4. Across the columns I vary the measure of job-openings. In column 1, I use the traditional measure from the vacancy survey. In column 2, I instead use the number of plants with a positive number of vacancies. In column 3, I use the number of plants with a positive number of vacancies weighted by their size. The purpose of these alternative measures is, in a very simple manner, to account for the distributional issues of vacancies that I have found above. Notice that I for simplicity weigh plants \emph{linearly} with their size, rather than with a concave function as size as suggested by the results in Section \ref{sec:basic_rel}.
+In Table \ref{tab:matchning_sa}, I report the estimated matching function \eqref{eq:matching_fct_log} using both the standard vacancy measure and the alternative measure for job-openings. The matching function is estimated on Swedish data during the period 2001Q1-2012Q4. Across the columns I vary the measure of job-openings. In column 1, I use the traditional measure from the vacancy survey. In column 2, I instead use the number of plants with a positive number of vacancies. In column 3, I use the number of plants with a positive number of vacancies weighted by their size. \footnote{Table \ref{tab:matchning_sa} is estimated using seasonally adjusted data. Table \ref{tab:matchning_nsa} does the estimation using non-seasonally adjusted data, \ref{tab:matchning_nsa_lag} uses non-seasonally adjusted data where the measure of labor market tightness on the right-hand side has been lagged one quarter and \ref{tab:matchning_sa_lag} uses seasonally adjusted data where the tightness measure has been lagged one quarter. All these alternative specifications yield qualitatively results.}
+%Notice that I for simplicity weigh plants \emph{linearly} with their size, rather than with a concave function as size as suggested by the results in Section \ref{sec:basic_rel}.
 
-Interestingly, the alternative measures of job-openings yield better fitting matching functions than the traditional vacancy measure. Indeed, compared to the traditional measure of vacancies (column 1) the fit of the matching function is improved by 13 \% when using the number of plants with a positive number of vacancies (column 2), and 30 \% when using the number of plants with a positive number of vacancies weighted by size (column 3). Although the fit of the matching function is improved when using the alternative measure of job-openings, the three models still yield roughly similar coefficients. Thus, both the micro and macro level evidence points to the alternative measure of job-openings being superior to the traditional vacancy measure. 
+Interestingly, the alternative measures of job-openings yield better fitting matching functions than the traditional vacancy measure. Indeed, compared to the traditional measure of vacancies (column 1) the fit of the matching function (as measured by the adjusted $R^2$) is improved by 30 \% when using the number of plants with a positive number of vacancies (column 2), and 40 \% when using the number of plants with a positive number of vacancies weighted by size (column 3). Although the fit of the matching function is improved when using the alternative measure of job-openings, the three models still yield roughly similar coefficients. 
 
-\input{../../Data/Not_Server/Matching_estimation/tables/matching_fct_table_nsa}
+Having estimated these matching functions we can now reassess the recent breakdown on the Swedish matching function. This breakdown is both witnessed by a lower job-finding probability than what the historic relationship between the job-finding probability and labor market tightness would suggest (Figure \ref{fig:estimated_jfr}), and by the outwards shift in the Swedish Beveridge curve (Figure \ref{fig:Beveridge}, upper panel). In line with what have been hypothesized about the case of the United States, some Swedish economists and policymakers have argued that the shift can have been caused by a gradually declining matching efficiency on the labor market \citep{Riksbank2012, Hakanson2014}.  
 
-These findings have potentially important implications for how we should think about the recent developments on the labor market. Figure \ref{fig:tightness} shows the time-serie for labor market tightness\footnote{Measured as job-openings per unemployed worker} on the Swedish labor market using the traditional and the alternative measure for job-openings, respectively. Importantly, the labor market, as measured using the traditional measure, was almost equally tight before and after the Great Recession. This is however not the case when using the alternative measure to gauge labor market tightness. Here the Swedish labor market was substantially less tight after the Great Recession. 
+If we look at the Swedish labor market using the alternative measure of job-openings the picture is slightly different. Figure \ref{fig:estimated_jfr} shows the actual and estimated job-finding probability in Sweden, where the latter is estimated on the timeseries for job-finding probabilities and labor market tightness up to 2008. The figure shows that during the recovery (2010-2012) the job-finding probability on average has been 2.9 percentage points lower than than what the historical relationship between job-finding probabilities and labor market tightness would suggest. When using the alternative measure for job-openings the job-opening probability is on average 2.2 percentage points higher than what labor market tightness and the historical relationship would suggest. Thus, if one accepts the alternative measure as superior to the traditional vacancy then mis-measurement can explain explain 24 \% of the post Great Recession breakdown in the relationship between hires and labor market tightness. 
 
-The difference in perceived tightness stems from the distribution of vacancies. After the Great Recession vacancies bounced back, but less so in larger plants where, as documented above, the vacancy yield is higher than in smaller plants. This implies that the apparent surge in vacancies after the Great Recessions may partly have been deceptive: Vacancies soared, but primarily in plants where the vacancy yield was low. Consequently, the traditional vacancy measure may have made the labor market look tighter than it actually was during the recovery. 
+A similar picture is seen for the Beveridge curve. Figure \ref{fig:Beveridge} shows the Beveridge curve using the traditional and alternative job-opening measure, respectively. For both measures there is an outward shifts following the Great Recession, but the shift is somewhat less pronounced when using the alternative measure. In fact the curve in recent years appears to have been operating closer to the level also observed in 2006. 
 
-My findings also call for a re-interpretation of the recent developments in the Swedish Beveridge curve. As mentioned in the introduction, one of the puzzles in macroeconomics after the Great Recession has been why the Beveridge curve in a number of advanced countries, including Sweden, moved out in the aftermath of the crisis (Figure \ref{fig:Beveridge}). In line with what have been hypothesized about the case of the United States, some Swedish economists and policymakers have argued that the shift can have been caused by a gradually declining matching efficiency on the labor market \citep{Riksbank2012, Hakanson2014}. However, if we look at the Swedish Beveridge curve through the lens of the alternative measure for job-openings the outward shift is less pronounced (Figure \ref{fig:Beveridge}). Using this measure there was also an outward after 2008, but it was smaller and in recent years the Beveridge curve has been operating close to a level where it also operated around 2006. 
+\subsection{Allowing for plant-level heterogeneity in matching function}
 
-In sum, my findings suggest that part of the recent movements in the Swedish Beveridge curve can be explained by measurement issues. Vacancies quickly bounced back after the crisis, but less so in larger plants where the vacancy yield is highest. This may have made the Swedish labor market look tighter after the Great Recession than what it actually was. Using my alternative measure of job-openings, which in a simple way accounts for the variations in the vacancy yield across plants, the outward shift in the Swedish Beveridge curve is less clear. 
+Using the plant level data I show that our ability to predict plant-level hiring was improved when allowing job-openings to be a function of vacancies as well as plant-size. In the sub-section above I interpreted as the traditional vacancy \emph{measure} being poor. Informed by this interpretation I constructed an alternative measure where job-openings also was a function of plant-size. However, another interpretation of the same plant-level findings is that vacancies correctly measure job-openings, but that \emph{plant-level matching efficiency} should be allowed to depend on plant-level characteristics. 
 
-\begin{figure}[h]
-\centering
-%l b r t
-\caption{Labour market tightness}
-\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=\textwidth]{../../Data/Not_Server/Matching_estimation/figures/fig_tightness.pdf}
-\flushleft
-\footnotesize{\emph{Notes:} The figure shows labor market tightness defined as the stock of job-openings divided by the stock of unemployed. The traditional measure uses vacancy as measure of job-openings. The alternative uses the sum of plants with any vacancies weighted by size.} \\
-\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden.}
-\label{fig:tightness}
-\end{figure}
+To explore the implications of this interpretation, I construct a simple search-matching model with a role for heterogeneity. The model is inspired by \cite{Kroft2016}, who allows matching efficiency to vary across \emph{worker} characteristics. In contrast, I allow matching efficiency to vary across \emph{plant} characteristics. As plant-level matching efficiency varies across plant-characteristics, this opens a channel through which the distribution of job-openings can impact aggregate matching efficiency. Specifically, if a larger share of vacancies are posted at plants with lower matching efficiency, then aggregate matching efficiency will decline. In this sub-section, I will assess whether such a compositional effect can explain the recent break-down in the historical relationship between job-finding probabilities and labor market tightness on the Swedish labor market.
 
-\begin{figure}[h]
-\centering
-%l b r t
-\caption{Beveridge curves}
-\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=\textwidth]{../../Data/Not_Server/Matching_estimation/figures/BC_std_activeplants_empw.pdf}
-\flushleft
-\footnotesize{\emph{Notes:} In panel A the Beveridge curve is drawn using the standard vacancy measure for job-openings. In panel B the sum of plants with any vacancies weighted by size is used as measure for job-openings.} \\
-\footnotesize{\emph{Source:} Own calculation on data from Statistics Sweden.}
-\label{fig:Beveridge}
-\end{figure}
+\subsubsection{Matching function}
+
+To allow plant characteristics to affect matching efficiency, I use a setup inspired by \cite{Kroft2016}. Workers and job-openings meet according to the standard matching function.
+\begin{align}
+M(U,V)=AU^{\alpha}V^{1-\alpha} \label{eq:Hj}
+\end{align}
+But the rate by which a meet is transformed to a match is dependent on a plant specific parameter $\kappa_j$, which I allow to depend on plant size. Henc, the number of hires in plant $j$ is written
+\begin{align}
+H_{j}=\kappa\left( s_j \right) \frac{M(U,V)}{V} V_j \label{eq:Hj}
+\end{align}
+
+One way to rationalise this is by allowing the \enquote{meet-to-match} rate to depend on size is through the mechanism present in the \emph{job-ladder model} by \cite{Moscarini2016}. Here workers \enquote{rank} employers according to attractiveness, and since higher-ranked employers will be able to attract and retain more workers, employer size will be a relevant proxy for attractiveness. This appears consistent with the finding that vacancy yields increase in plant size (Table \ref{tab:vacancy_yield_tax}-\ref{tab:vacancy_yield_survey}).
+
+In this model, the aggregate number of hires is as usual a function of unemployment, job-openings, aggregate matching efficiency but also of the distribution of vacancies across plants. To see this, integrate \eqref{eq:Hj} over plants in order to get the total number of hires in the economy. 
+\begin{align}
+H&=\frac{M(U,V)}{V} \int \kappa(s_\tau) V_\tau d \tau \nonumber\\
+\Rightarrow H&=M(U,V) \int \kappa(s_\tau) \frac{V_\tau}{V} d \tau \nonumber\\
+\Rightarrow H&=M(U,V) \underbrace{\int \kappa(s_\tau) \theta(s_\tau) d \tau}_{\Omega} \label{eq:H}
+\end{align}
+Here $\Omega$ is a composite of the meet-to-match rate of all plants with job-openings, where the rates are weighted by each plant’s share of the market for job-openings, $\theta(s_j)$. 
+
+Consequently, changes in the composition of job-openings will \emph{shift} the level of the aggregate matching function. Specifically, if the distribution of job-openings shifts towards plants with higher meet-to-plant rates, then the level of hires, for a given number of unemployment and job-openings, will increase. Conversely, if the distribution of job-openings shifts towards plants with lower meet-to-match rates, the level of hires will decrease. Hence, the distribution of job-openings will play a role akin to that of the aggregate level of match efficiency, A, in the usual matching function. 
+
+\subsubsection{Job-finding probabilities}
+In this setup, the job-finding probability facing an unemployed worker will also depend on the distribution of job-openings across plants. Specifically, the job-finding probability reads
+\begin{align}
+\lambda^{UE}=\frac{H}{U}=Ax^{1-\alpha}\underbrace{\int \kappa(s_\tau) \theta (\tau) d \tau}_{\Omega} \label{eq:jfr_m}
+\end{align} 
+where $x \equiv \frac{V}{U}$ is a measuring labor market tightness. The distribution of vacancies thus affects the job-finding probability in the same way as it affects the aggregate matching function: if the distribution of vacancies shifts towards plants with higher(lower) meet-to-match rates then the job-finding probability will go up(down).
+
+%\subsubsection{Job-filling rates}
+%The job-filling rate for plant $j$ reads
+%\begin{align}
+%\lambda^{VJ}(s_j)=\kappa(s_j)\frac{AU^\alpha V^{1-\alpha}}{V}=\kappa(s_j)Ax^{-\alpha} \label{eq:jfr_m}
+%\end{align}
+%Hence, the rate by which job-openings are filled are plant specific, and depends positive on the plants' \emph{meet-to-match} rate.
+
+\subsubsection{Estimation}
+
+Ultimately, I am interesting in testing whether this model can explain breakdown in the Swedish matching function following the Great Recession. To this end, I need to estimate the parameters in the model $\left\{ A, \alpha, \kappa(s) \right\}$.  using pre-crisis data. Subsequently, I predicted the job-finding probability using the estimated parameters and post-crisis data for unemployment and vacancies. 
+
+I estimate $\kappa (s)$ using the micro data on hires and vacancies. Specifically, I estimate a logged version of the plant level hiring equation \eqref{eq:Hj}:
+\begin{align}
+\ln(H_{j,t+1})&= \ln \left( \frac{M(U_t,V_t)}{V_t} \right)+\ln V_{j,t} +\ln \kappa(s_{j}) 
+\end{align}
+Here I estimate $\ln \kappa(s_j)$ non-parametrically using dummies across size deciles. I account for aggregate labor market conditions, the first right hand term, via a time-fixed effect, and I restrict the coefficient on $\ln V_{j,t}$ to unity in order to ensure that \eqref{eq:Hj} aggregates to \eqref{eq:H}. The left hand term is plant level hires, which I can either from the tax or survey data. In Table \ref{table:estimating_kappa}, I estimate the equation using both measures for hiring. While the exact parameters differs slightly, then the increasing slope in plant-size in clear using both measures for hires. The coefficients for the smaller deciles are insignificant when using the survey data. This is likely caused by the fact that few small plants are sampled in consecutive months in the survey data (see Section \ref{sec:data}). For this reason I will rely on the parameters estimated using tax-hires in the analysis below.
+
+To estimate $A$ and $\alpha$, I use aggregate data. Specifically, I log the the expression for the job-finding probability \eqref{eq:jfr_m}, where I have discretized $\Omega (t)$ into size deciles, which yields the expression
+\begin{align}
+\log(\lambda^{UE}) = \log(A)+(1-\alpha)\log x(t)+\log \left( \sum_{\tau} \kappa(s_\tau) \theta(s_\tau(t))  \right)
+\end{align}
+Here $\lambda^{UE}$ is the aggregate job-finding probability, which I obtain from the \emph{Swedish Labor Force Survey}, $x(t)$ is labor market tightness which I take from the \emph{Swedish Job Vacancy Survey} and finally the last term is the time-specific composite of all plant level meet-to-match rates weighted by their densities in the vacancy data. The coefficient on the last term is restricted to one. The estimated values for $A$ and $\alpha$ are shown in Table \ref{table:estimating_kappa}.
+
+\subsubsection{Counter factual exercise}
+How did changes in the composition in vacancies across affect job-findings probabilities over time? To address this question, I plot the time serie for $\Omega(t)=\sum_{\tau} \kappa(s_\tau) \theta(s_\tau(t))$ during 2001-2013 in Figure \ref{fig:agg_imp:omegatimeseries}. As seen in \eqref{eq:jfr_m} this measure captures the contribution to the level of the job-finding probability stemming from the distribution of vacancies across plant size.
+
+Figure \ref{fig:agg_imp:omegatimeseries} shows that $\Omega(t)$ saw a drop during 2008-09, which was followed by a partial bounced back in the following years. This reflects, that the distribution of vacancies during the recession moved towards plants with lower \enquote{meet-to-match} rates, which in turn weighed negatively on the overall job finding probability in the economy. Table \ref{tab:agg_imp:dist_over_time} shows that the share of vacancies in the 4 largest deciles fell from 2007 to 2009 from 57.5 \% to 51.7 \% (Table \ref{tab:agg_imp:dist_over_time}). Figure \ref{fig:agg_imp:omegatimeseries}  also suggests, that part of the reason why the job-finding probability did not fully recover in the wake of the recession can be found in the post-recession distribution of vacancies. Indeed, after the recession $\Omega(t)$ remained below its pre-recession peak.
+
+In Figure \ref{fig:agg_imp:pred_jfp}, I investigate the quantitative relevance of this argument. Specifically, I use the estimated model to predict job finding probabilities under two alternative scenarios. 
+\begin{enumerate}
+	\item One where the composition of vacancies is as observed in the data, and
+	\item one where the distribution of vacancies after 2008 remains at the 2008-level.
+\end{enumerate}
+
+Figure \ref{fig:agg_imp:pred_jfp} shows that the change in composition can explain only little of the total decline in the predicted job finding probability. Specifically, the probability is just 0.3 \% percentage points lower when allowing the distribution of vacancies to follow the actual distribution. This suggests that changes in the distribution only explains little of the total decline in job finding probabilities during and after the Great Recession. 
+
+Consequently, the original puzzle remains in this augmented model. Indeed, Figure \ref{fig:actual_and_predicted_jfp_model_with_distribution} shows that the model overshoots the actual job finding probability by (on average) $2$ percentage point during the period 2010-2013. This is same as the overshooting in the non-augmented model.

@@ -1,0 +1,48 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Plant level hiring regression, nonlinear least squares, 2001-2012}
+\label{tab:main_nls}
+\begin{tabular}{llll}
+\hline\hline
+                &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                &\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}\\
+\hline
+
+\hline
+			    &\multicolumn{3}{c}{\textbf{A. Tax hires}} \\
+\hline
+
+\input{\datadir Data/Server/tables/table_est_nls_tax_hires_1.tex}
+\hline 
+Time fixed effects  &         Yes         &         Yes         &         Yes                      \\
+[1em]
+Industry dummies    &          No         &          No         &         Yes               \\
+[1em]
+%Value-added dummies &          No         &          No         &          No         &         Yes         &         Yes         \\%
+%[1em]
+%Turnover dummies    &          No         &          No         &          No         &          No         &         Yes         \\
+\hline 
+\input{\datadir Data/Server/tables/table_est_nls_tax_hires_2.tex}
+
+\hline
+			    &\multicolumn{3}{c}{\textbf{B. Survey hires}} \\
+\hline
+
+\input{\datadir Data/Server/tables/table_est_nls_survey_hires_1.tex}
+\hline 
+Time fixed effects  &         Yes         &         Yes         &         Yes                      \\
+[1em]
+Industry dummies    &          No         &          No         &         Yes               \\
+[1em]
+%Value-added dummies &          No         &          No         &          No         &         Yes         &         Yes         \\%
+%[1em]
+%Turnover dummies    &          No         &          No         &          No         &          No         &         Yes         \\
+\hline 
+\input{\datadir Data/Server/tables/table_est_nls_survey_hires_2.tex}
+
+\hline\hline
+\multicolumn{4}{l}{\footnotesize \emph{Notes:} * \emph{p}<0.05, ** \emph{p}<0.01, *** \emph{p}<0.001}\\
+\multicolumn{4}{l}{\footnotesize Log(hires) are leaded one period vis-a-vis log(Vacancies)}\\
+\multicolumn{4}{l}{\footnotesize \emph{Source:} Own calculations on data from Statistics Sweden}\\
+\end{tabular}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Plant level hiring regression, averaged over year, ordinary least squares, survey hires, 2001-2012}
+\label{tab:robust:average_year}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+                &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+                &\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}\\
+\hline
+
+\input{\datadir Data/Server/tables/table_est_robust_avg_year_tax_1.tex}
+\hline 
+\input{\datadir Data/Server/tables/table_est_robust_avg_year_tax_2.tex}
+
+\hline\hline
+\multicolumn{6}{l}{\footnotesize \emph{Notes:} Standard errors clustered on firm level. * \emph{p}<0.05, ** \emph{p}<0.01, *** \emph{p}<0.001}\\
+\multicolumn{6}{l}{\footnotesize Log(hires) and Log(vacancies) is the average during the given year}\\
+\multicolumn{6}{l}{\footnotesize \emph{Source:} Own calculations on data from Statistics Sweden}\\
+\end{tabular}
+\end{table}
+

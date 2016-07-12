@@ -1,0 +1,18 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Average job-filling and vacancy creation rates, across industries, 2001-2012}
+\label{tab:filling_creation_rates_by_industry}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                &\multicolumn{1}{c}{Daily job-filling rate}&\multicolumn{1}{c}{Monthly vacancy flow rate}\\
+								&\multicolumn{1}{c}{(\%)}&\multicolumn{1}{c}{(\% of employment)}\\
+								\hline
+\input{\datadir timagg/output/industry_table.tex}
+\hline
+\input{\datadir timagg/output/total_table.tex}
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \emph{Notes:} Calculated using unweighted microdata on hires and vacancies. Total is computed using}\\
+\multicolumn{3}{l}{\footnotesize  published data on hires and vacancies.}\\
+\multicolumn{3}{l}{\footnotesize \emph{Source:} Own calculations on data from Statistics Sweden}\\
+\end{tabular}
+\end{table}

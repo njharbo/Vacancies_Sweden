@@ -1,0 +1,28 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Plant level hiring regression, non-linear least squares, survey-hires, 2001-2012}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+                &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                &\multicolumn{1}{c}{Hires}&\multicolumn{1}{c}{Hires}&\multicolumn{1}{c}{Hires}\\
+\hline
+
+\input{../../Data/Server/tables/table_est_nls_survey_hires_1.tex}
+\hline 
+Time fixed effects  &         Yes         &         Yes         &         Yes         &                     \\
+[1em]
+Industry dummies    &          No         &          No         &         Yes         &                      \\
+[1em]
+%Value-added dummies &          No         &          No         &          No         &         Yes         &         Yes         \\
+%[1em]
+Turnover dummies    &          No         &          No         &          No         &                      \\
+\hline 
+\input{../../Data/Server/tables/table_est_nls_survey_hires_2.tex}
+
+\hline\hline
+%\multicolumn{6}{l}{\footnotesize \emph{Notes:} Standard errors clustered on firm level. * \emph{p}<0.05, ** \emph{p}<0.01, *** \emph{p}<0.001}\\
+\multicolumn{6}{l}{\footnotesize Hires are leaded one period vis-a-vis Vacancies}\\
+\multicolumn{6}{l}{\footnotesize \emph{Source:} Own calculations on data from Statistics Sweden}\\
+\end{tabular}
+\end{table}
+

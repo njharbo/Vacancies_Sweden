@@ -1,0 +1,33 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{\label{tab:robust_timeagg_ols} Plant level hiring regression, corrected for time-aggregation, ordinary least squares,  2001-2012}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+                &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+                &\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}&\multicolumn{1}{c}{Log(Hires)}\\
+\hline
+
+\hline
+			    &\multicolumn{5}{c}{\textbf{A. Tax hires}} \\
+\hline
+
+\input{\datadir Data/Server/tables/table_est_main_ols_tax_hires_timeagg_1.tex}
+\hline 
+\input{\datadir Data/Server/tables/table_est_main_ols_tax_hires_timeagg_2.tex}
+\hline
+
+\hline
+			    &\multicolumn{5}{c}{\textbf{B. Survey hires}} \\
+\hline
+
+
+\input{\datadir Data/Server/tables/table_est_main_ols_survey_hires_timeagg_1.tex}
+\hline 
+\input{\datadir Data/Server/tables/table_est_main_ols_survey_hires_timeagg_2.tex}
+
+\hline\hline
+\multicolumn{6}{l}{\footnotesize \emph{Notes:} Standard errors clustered on firm level. * \emph{p}<0.05, ** \emph{p}<0.01, *** \emph{p}<0.001}\\
+\multicolumn{6}{l}{\footnotesize Log(hires) are leaded one period vis-a-vis log(Vacancies)}\\
+\multicolumn{6}{l}{\footnotesize \emph{Source:} Own calculations on data from Statistics Sweden}\\
+\end{tabular}
+\end{table}

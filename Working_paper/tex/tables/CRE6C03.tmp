@@ -1,0 +1,19 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Plant level hiring regression, ordinary least squares, tax-hires,2001-2007}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+&\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}}\\
+&\multicolumn{1}{c}{\small{Log(Hires, tax)}}&\multicolumn{1}{c}{\small{Log(Hires, tax)}}&\multicolumn{1}{c}{\small{Log(Hires, survey)}}&\multicolumn{1}{c}{\small{Log(Hires, survey)}}\\
+\hline
+
+%\input{../../Data/Server/tables/table_rate_size_deciles_1.tex}
+\hline 
+%\input{../../Data/Server/tables/table_rate_size_deciles_2.tex}
+
+\hline\hline
+\multicolumn{6}{l}{\footnotesize \emph{Notes:} Table reports coefficients of a constrained estimation of (TBD). Sample is restricted to pre-2008.}\\
+\multicolumn{6}{l}{\footnotesize Log(hires) are leaded one period vis-a-vis log(Vacancies)}\\
+\multicolumn{6}{l}{\footnotesize \emph{Source:} Own calculations on data from Statistics Sweden}\\
+\end{tabular}
+\end{table}

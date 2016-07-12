@@ -1,0 +1,28 @@
+      \begin{table}[htbp]\centering
+			\scriptsize
+      \caption{\label{tab:vacancy_yield_survey} Average hiring rates, vacancy rates and vacancy yields, 2001-2013  
+      \textbf{} }\begin{tabularx} {\textwidth} {  l  c  c  c} \\ \hline %**{4}{R}
+     \multicolumn{4}{c}{ \textbf{Survey hires}}  \\ \midrule
+		\textbf{ } & \textbf{ Hiring rate } & \textbf{ Vacancy rate } & \textbf{  Vacancy yield  } \\
+			\textbf{ } & \textbf{  ($\%$) } & \textbf{ ($\%$) } & \textbf{ ($\#$) } \\
+      \midrule
+			    \multicolumn{4}{c}{By industry} \\
+			\midrule
+\input{\datadir Data/Server/tables/table_survey_hire_ratios_by_industry.txt}
+     \midrule
+						   \multicolumn{4}{c}{By number of employees (deciles)} \\
+			\midrule
+\input{\datadir Data/Server/tables/table_survey_hire_ratios_by_plant_decile.txt}
+     \midrule
+						  \multicolumn{4}{c}{By turnover (deciles)} \\
+			\midrule
+\input{\datadir Data/Server/tables/table_survey_hire_ratios_by_turnover_decile.txt}
+				\hline
+      \multicolumn{4}{l}{\footnotesize{\emph{Notes:} The hiring rate is the fraction of hires to the plant size.  The vacancy rate is }} \\
+			\multicolumn{4}{l}{\footnotesize{the average fraction of vacancies to plant size. The vacancy yield is the average} } \\
+			\multicolumn{4}{l}{\footnotesize{ fraction of vacancies to hires. All rates are computed  on the plant-level.}} \\
+			\multicolumn{4}{l}{\footnotesize{ Public sector has been dropped in tabulation by turnover.} } \\ 
+			\multicolumn{4}{l}{\footnotesize{\emph{Source:} Own calculations from Statistics Sweden } }
+
+      \end{tabularx}
+      \end{table}

@@ -6,20 +6,24 @@
        &&   (1) &&     (2) &&    (3)       &&   (4)        &&   (5)      \\
 \hline
         &&   Hires(t+1) &&      Hires(t+1) &&     Hires(t+1)      &&   Hires(t+1)       &&     Hires(t+1)     \\
+%START DATA INPUT
+%Input to this file comes from data/server/tables/table_est_main_ols_tax. Take number rows and insert double &&		
 \hline
 Vacancies(t)       &&     0.49\sym{***}&&      0.04\sym{***}&&      0.01         &&    0.00         &&    0.00       \\
                     &&   (0.01)         &&   (0.01)         &&   (0.01)         &&   (0.01)         &&   (0.02)           \\
 Plant size (t)      &&                     &&       0.66\sym{***} &&       0.68\sym{***} &&       0.91\sym{***} &&       0.91\sym{***}\\
                     &&                     &&   (0.01)         &&   (0.01)         &&    (0.01)         &&    (0.01)         \\
+%END DATA INPUT												
 \hline
 Time-fixed effects  && Yes                 && Yes                     &&           Yes          &&    Yes        &&    Yes      \\
 Industry dummies    && No                  && No                      &&     Yes                 &&    Yes        &&   Yes      \\
 Value-added dummies && No                  && No                      &&     No                 &&    Yes        &&    Yes      \\
 Turnover dummies    && No                  && No                      &&     No                 &&    No        &&    Yes      \\
 \hline
+%START DATA INPUT
+%Input to this file comes from data/server/tables/table_est_main_ols_tax. Take number rows and insert double &&	
 Observations        &&      693451         &&      693451         &&      693451         &&      482784         &&      482784         \\
 Adjusted \(R^{2}\)  &&       0.03         &&       0.05         &&       0.05         &&       0.08         &&        0.03         \\
-%\textit{AIC}        &&   6036235          &&   6022939         &&   6022387         &&   3686250         &&   3708815         \\
 \hline\hline
 \multicolumn{11}{l}{\footnotesize \emph{Notes:} Standard errors in parentheses. \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\). }\\
 \multicolumn{11}{l}{\footnotesize\emph{Source:} Own calculations on data from Statistics Sweden. }\\

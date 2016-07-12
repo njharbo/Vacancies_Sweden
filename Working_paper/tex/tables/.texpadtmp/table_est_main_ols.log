@@ -1,0 +1,202 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.10.16)  5 MAY 2016 01:22
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex"
+(/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:1: Undefined control sequence.
+l.1 \begin
+          {table}[htbp]\centering
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:2: Missing number, treated as zero.
+<to be read again> 
+                   \def 
+l.2 \def
+        \sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:2: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \def 
+l.2 \def
+        \sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:3: Undefined control sequence.
+l.3 \caption
+            {Plant level hiring regression, ordinary least squares l, 2001-2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:4: Undefined control sequence.
+l.4 \begin
+          {tabular}{l*{5}{c}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:5: Undefined control sequence.
+l.5 \hline
+          \hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:5: Undefined control sequence.
+l.5 \hline\hline
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Misplaced alignment tab character &.
+l.6                 &
+                     \multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multic...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Undefined control sequence.
+l.6                 &\multicolumn
+                                 {1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multic...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Misplaced alignment tab character &.
+l.6                 &\multicolumn{1}{c}{(1)}&
+                                             \multicolumn{1}{c}{(2)}&\multic...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Undefined control sequence.
+l.6 ...      &\multicolumn{1}{c}{(1)}&\multicolumn
+                                                  {1}{c}{(2)}&\multicolumn{1...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Misplaced alignment tab character &.
+l.6 ...icolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&
+                                                  \multicolumn{1}{c}{(3)}&\m...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Undefined control sequence.
+l.6 ...}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn
+                                                  {1}{c}{(3)}&\multicolumn{1...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Misplaced alignment tab character &.
+l.6 ...icolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&
+                                                  \multicolumn{1}{c}{(4)}&\m...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Undefined control sequence.
+l.6 ...}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn
+                                                  {1}{c}{(4)}&\multicolumn{1...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Misplaced alignment tab character &.
+l.6 ...icolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&
+                                                  \multicolumn{1}{c}{(5)}\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:6: Undefined control sequence.
+l.6 ...}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn
+                                                  {1}{c}{(5)}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+ &\multicolumn {1}{c}{Log(Hires)}&\multicolumn {1}{c}{Log(Hires)}&\multicolumn \ETC.
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:9: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.9 
+    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (35.19043pt too wide) in paragraph at lines 1--9
+[]\tenrm table[htbp] Plant level hir-ing re-gres-sion, or-di-nary least squares l, 2001-2012 tab-u-larl*5c 1c(1)1c(2)1c(3)1c(4)1c(5) |
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm t
+.\tenrm a
+.\tenrm b
+.\tenrm l
+.etc.
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:11: I can't find file `{../../../Data/Server/tables/table_est_main_ols_tax_hires_1.tex}'.
+l.11 ...tables/table_est_main_ols_tax_hires_1.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:11: Emergency stop.
+l.11 ...tables/table_est_main_ols_tax_hires_1.tex}
+                                                  
+*** (job aborted, file error in nonstop mode)
+
+/Users/njharbo/Dropbox/Research/Vacancies and job creation in Sweden/writing/Working_paper/tex/tables/table_est_main_ols.tex:11:  ==> Fatal error occurred, no output PDF file produced!

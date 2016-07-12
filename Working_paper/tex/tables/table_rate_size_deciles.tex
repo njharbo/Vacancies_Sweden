@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{$\kappa$, $\alpha$ and A estimated on pre-2008 data}
+\label{table:estimating_kappa}
+\begin{tabular}{lccc}
+\hline \hline
+ \multicolumn{4}{c}{$\kappa(s)$ estimated on micro data} \\
+\hline \hline
+       Plant size         & Mass of & $\ln \kappa (s_\tau)$ & $\ln \kappa (s_\tau)$ \\
+			                    & plants& Tax hires          &Survey hires               \\
+\hline
+\input{\datadir Data/Server/tables/table_rate_size_deciles_1.tex}
+\hline 
+\input{\datadir Data/Server/tables/table_rate_size_deciles_2.tex} \\
+\hline \hline
+\multicolumn{4}{c}{$A$ and $\alpha$ estimated on aggregate data} \\
+\hline \hline \\
+\input{\datadir Data/Not_Server/Matching_estimation/tables/etimating_A_alpha} \\
+\hline\hline 
+\multicolumn{4}{l}{\footnotesize \emph{Notes:} * \emph{p}<0.05, ** \emph{p}<0.01, *** \emph{p}<0.001. $\kappa(s)$ is estimated by regressing}\\
+\multicolumn{4}{l}{\footnotesize  $\log(H_jt)$ on time-fixed effects, $\log(V_jt)$ with a coefficient restricted to one} \\
+\multicolumn{4}{l}{\footnotesize and dummies for size-deciles. $A$ and $\alpha$ are estimated by regressing $\log(jfr)$ on}\\
+\multicolumn{4}{l}{\footnotesize  $\log(x(t))$ and $\Omega(t)$ with a coefficient restricted to one.}\\
+\multicolumn{4}{l}{\footnotesize \emph{Source:} Own calculations on data from Statistics Sweden}
+\end{tabular}
+\end{table}
